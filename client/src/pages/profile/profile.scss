@@ -1,0 +1,27 @@
+.ios, .md, .wp{
+page-profile {
+
+    ion-item{
+        padding: 0px;
+    }
+
+
+    ion-list{
+         padding: 40px 25px 30px 25px ;
+    }
+
+    button{
+        padding: 0px;
+        color: map-get($colors , deep );
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+
+    #item{
+        color: map-get($colors , deep);
+        font-weight: 900;
+    }
+
+
+}
+}

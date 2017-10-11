@@ -1,0 +1,56 @@
+.ios, .md, .wp{
+page-boutique-info {
+
+    
+    
+    
+    ion-header{
+        //back button
+        button{
+            color: map-get($colors , danger);
+        }
+        .toolbar-background {
+             background-color: map-get($colors , lighter);
+        }
+
+    }
+
+
+    ion-content{
+        ion-item{
+            padding: 0px;
+        }
+
+
+        #info{
+            padding: 50px 25px 15px 25px ;
+        }
+
+        ion-list{
+            padding: 15px 25px 15px 25px ;
+        }
+
+        button{
+            padding: 0px;
+            color: map-get($colors , Light ) ;
+            font-weight: 900;
+        }
+
+
+        #item{
+            color: map-get($colors , danger);
+            font-weight: 900;
+        }
+
+        ion-list-header{
+            color: map-get($colors , primary);
+        }
+
+
+
+
+
+    }
+    
+}
+}

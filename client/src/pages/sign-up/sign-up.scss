@@ -1,0 +1,29 @@
+.ios, .md, .wp{
+    page-sign-up {
+        ion-content{
+            background-color:map-get($colors , lighter );
+            button{
+                padding: 0px;
+                color: map-get($colors , deep );
+                font-weight: 900;
+            }
+        }
+
+        ion-item{
+            background-color:map-get($colors , lighter );
+            padding: 0px;
+        }
+
+
+        ion-list{
+             padding: 40px 25px 30px 25px ;
+        }
+
+        div p{
+            color: map-get($colors , primary );
+            text-align: center;
+            font-size: 18px;
+        }
+
+    }
+}

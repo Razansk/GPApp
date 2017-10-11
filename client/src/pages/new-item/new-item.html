@@ -1,0 +1,56 @@
+
+<ion-header >
+  <ion-navbar >
+    <ion-title >New Kessa</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding-vertical >
+  <div padding>
+    <form >
+        <ion-list>
+          <ion-item>
+              <ion-label>Name:</ion-label>
+              <ion-input floating type="text" placeholder="Product Name" #name > </ion-input>
+          </ion-item>
+
+          <ion-item >
+              <ion-label>category</ion-label>
+              <ion-select >
+              <ion-option color="secondary" >All black Kessa</ion-option>
+              <ion-option color="secondary" >Daily Kessa</ion-option>
+              <ion-option color="secondary" >Night Kessa</ion-option>
+              <ion-option color="secondary" >Scarfs</ion-option>
+              </ion-select>
+          </ion-item>
+
+          <ion-item>
+              <ion-label >Price</ion-label>
+              <ion-input floating type="number" ></ion-input>
+          </ion-item>
+
+          <ion-item class="option">
+              <ion-label>InStock</ion-label>
+              <ion-toggle checked="true" ></ion-toggle>
+          </ion-item>
+
+
+          <ion-item>
+              <ion-label >Description</ion-label>
+              <ion-textarea rows="4" floating type="text" ></ion-textarea>
+          </ion-item>
+
+          <ion-item>
+              <ion-thumbnail>
+                <img >
+              </ion-thumbnail>
+              <input type="file" name="Choose File" (click)="uplodFile()">
+          </ion-item>
+        </ion-list>
+    </form>
+  </div>
+
+  <div>
+    <button ion-button full color="primery" (click)="login()">save</button>
+  </div>
+</ion-content>

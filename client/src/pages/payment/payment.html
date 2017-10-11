@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="toolbar"> Payment</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding-vertical>
+  <div style="padding: 50px 25px 15px 25px; ">
+      <ion-list-header>Make Payment</ion-list-header>
+      <form #f="ngForm">
+        <ion-list no-margin>
+          <ion-item>
+              <ion-label >Name on Card</ion-label>
+              <ion-input required type="text"  name="stripe_number"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label >Card Number</ion-label>
+              <ion-input required type="text"  name="stripe_number"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label >Expiry Month</ion-label>
+              <ion-input required type="text"  name="stripe_exp_year"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label >Expiry Year</ion-label>
+              <ion-input required type="text"  name="stripe_exp_year"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label >Card Code</ion-label>
+              <ion-input required type="text"  name="stripe_code"></ion-input>
+            </ion-item>
+        </ion-list>
+      </form>
+      <br> 
+  </div>
+  <button ion-button full color="secondary" (click)="RejesterBoutiqe()">Buy</button>
+
+</ion-content>

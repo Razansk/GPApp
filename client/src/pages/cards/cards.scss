@@ -1,0 +1,26 @@
+.ios, .md, .wp{
+    page-cards {
+        ion-content{
+            button{
+                padding: 0px;
+                color: map-get($colors , deep );
+                font-weight: 900;
+            }
+
+            ion-item{
+                padding: 0px;
+             }
+
+
+            ion-list{
+                padding: 50px 25px;
+            }
+
+
+
+
+
+
+        }
+    }
+}

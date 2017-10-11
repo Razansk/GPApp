@@ -1,0 +1,22 @@
+.ios, .md, .wp{
+    page-home {
+
+        ion-content{
+            background-color:map-get($colors , lighter );
+
+        }
+
+
+        img{
+            text-align: center;
+            padding: 10% 18% 25% 18%;
+             
+        }
+
+        button{
+            padding: 0px;
+            color: map-get($colors , deep );
+            font-weight: 900;
+        }
+    }
+}

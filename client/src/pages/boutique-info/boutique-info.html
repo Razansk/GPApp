@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-navbar >
+    <ion-title >Boutique Info</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content >
+
+  <ion-list id="info">
+      <ion-item >
+          <ion-label id="item" >Boutique name:</ion-label>
+          <ion-label #name >AbayaBoutique</ion-label>
+      </ion-item>
+
+      <ion-item>
+          <ion-label >Instagram account:</ion-label>
+          <ion-input floating type="text" placeholder="@*****" #instagram ></ion-input>
+      </ion-item>
+  </ion-list>
+
+  <ion-list > 
+      <ion-list-header >The boutiqe ships to:</ion-list-header>
+      <ion-item >
+          <ion-label>Saudi Arabia</ion-label>
+          <ion-checkbox color="secondary" checked="true"></ion-checkbox>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Bahrain</ion-label>
+          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Kuwait</ion-label>
+          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Oman</ion-label>
+          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Qatar</ion-label>
+          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>UAE</ion-label>
+          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>
+      </ion-item>
+  </ion-list>
+
+  <ion-list >
+      <ion-list-header >online payment information</ion-list-header>
+      <ion-item>
+          <ion-label >Card number:</ion-label>
+          <ion-input floating type="text" placeholder="" #CNum ></ion-input>
+      </ion-item>
+
+      <ion-item >
+          <ion-label >Name on the card:</ion-label>
+          <ion-input floating type="text" placeholder="Ghada Bin Farhan" #CName></ion-input>
+      </ion-item > 
+
+      <ion-item >
+          <ion-label >Bank</ion-label>
+          <ion-input floating type="text" placeholder="Bank Name" #CName></ion-input>
+      </ion-item >
+
+      <ion-item > 
+        <ion-label >Country:</ion-label>
+        <ion-select [(ngModel)]="Country">
+          <ion-option value="SA">Saudi Arabia</ion-option>
+          <ion-option value="BH">Bahrain</ion-option>
+          <ion-option value="KW">Kuwait</ion-option>
+          <ion-option value="OM">Oman</ion-option>
+          <ion-option value="QA">Qatar</ion-option>
+          <ion-option value="AE">UAE</ion-option>
+        </ion-select>
+      </ion-item >
+
+  </ion-list>
+
+
+
+
+  <button ion-button full color="primery" (click)="RejesterBoutiqe()"> Rejester Boutiqe</button>
+
+</ion-content>

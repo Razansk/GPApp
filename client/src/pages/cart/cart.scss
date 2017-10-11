@@ -1,0 +1,28 @@
+.ios, .md, .wp{
+    page-cart {
+
+
+        ion-item{
+            padding: 0px;
+        }
+
+
+        ion-list{
+            padding: 15px 25px 15px 25px ;
+        }
+
+
+        ion-list-header{
+            color: map-get($colors , primary);
+        }
+
+        button{
+            padding: 0px;
+            color: map-get($colors , deep );
+            font-weight: 900;
+            margin-top: 20px;
+        }
+
+    }
+}
+

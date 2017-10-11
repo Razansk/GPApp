@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="toolbar">
+      New Arrivals
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding-vertical >
+   <div  class="prod">         
+         <div >
+            <div class="card-background-page grid" >
+
+               <ion-row *ngFor="let products of ProductsProvider.data" class="row unlimited-items">
+                  <ion-col class="col" >
+                     <ion-card>
+                       <!--item img-->
+                        <ion-card-content style="padding: 0px" class="stock">
+                           <a (click)="getProductDetails()">
+                              <img src="../assets/img/logo.png">
+                           </a>
+                        </ion-card-content>
+                        <!--item name-->
+                        <ion-label  style="font-weight:500; margin:8px 8px 0px;" color="deep"><strong>Item Name</strong></ion-label>
+          
+                        <ion-item no-padding class="price-list">
+                            <!--item price-->
+                            <h3 style="margin-top: 0px; text-align: left" color="secondary" >20</h3>
+                            <!--adding item-->
+                           <button ion-button icon-only style="margin: 0px" item-right clear color="primery"  (click)="addToCart()">
+                           <ion-icon ios="ios-add-circle-outline" md="ios-add-circle-outline"></ion-icon>
+                           </button>  
+                        </ion-item>
+                     </ion-card>
+                  </ion-col>
+
+                  <!-- second item -->
+                    <ion-col class="col" >
+                     <ion-card>
+                       <!--item img-->
+                        <ion-card-content style="padding: 0px" class="stock">
+                           <a (click)="getProductDetails()">
+                              <img src="../assets/img/logo.png">
+                           </a>
+                        </ion-card-content>
+                        <!--item name-->
+                        <ion-label style="font-weight:500; margin:8px 8px 0px;" color="deep"><strong>Item Name</strong></ion-label>
+          
+                        <ion-item no-padding class="price-list">
+                            <!--item price-->
+                            <h3 style="margin-top: 0px; text-align: left" color="secondary" >20</h3>
+                            <!--adding item-->
+                           <button ion-button icon-only style="margin: 0px" item-right clear color="primery"  (click)="addToCart()">
+                           <ion-icon ios="ios-add-circle-outline" md="ios-add-circle-outline"></ion-icon>
+                           </button>  
+                        </ion-item>
+                     </ion-card>
+                  </ion-col>
+            
+               </ion-row>
+               <!--end of row-->
+            </div>
+         </div>
+         <!-- end of drid view -->   
+
+   </div>
+
+</ion-content>

@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>KessaDetails</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="product" >
+   <div padding style="margin-bottom:40px">
+      <img src="../assets/img/logo.png">
+      <!--name-->
+      <ion-label color="deep" text-center><strong>Product Name</strong></ion-label>
+      <!--price-->
+        <ion-list>
+          <ion-item>
+            <ion-label id="item">Price: </ion-label>
+            <ion-label>88</ion-label>
+          </ion-item >
+        </ion-list>
+
+        <!--info-->
+        <ion-list class="info">
+          <ion-item>
+            <ion-label id="item">Designer:</ion-label>
+            <ion-label>kesaa boutique</ion-label>
+          </ion-item >
+
+          <!--description-->
+          <ion-item>
+            <ion-label id="item">Description:</ion-label>
+            <ion-label text-wrap> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</ion-label>
+          </ion-item>
+          <!--Category-->
+          <ion-item>
+            <ion-label id="item">Category:</ion-label>
+            <ion-label >Night Kessa</ion-label>
+          </ion-item>
+           <!--Size-->   
+           <ion-item>
+              <ion-label>Size</ion-label>
+                <ion-select [(ngModel)]="size">
+                  <ion-option value="Small">S</ion-option>
+                  <ion-option value="Medium">M</ion-option>
+                  <ion-option value="Large">L</ion-option>
+               </ion-select>
+            </ion-item>
+
+
+       </ion-list>
+   </div>
+      <button ion-button full color="secondary" (click)="addToCart()">Add To Cart</button>
+</ion-content>
+
+

@@ -1,0 +1,43 @@
+.ios, .md, .wp{
+page-kessa-details {
+    ion-item{
+        padding: 0px;
+    }
+
+    ion-list{
+        padding: 10px 15px 0px 15px ;
+    }
+
+
+    .info{
+         padding-top: 0px; 
+    }
+
+    button{
+        padding: 0px;
+        color: map-get($colors , deep);
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+
+    #item{
+        color: map-get($colors , deep);
+        font-weight: 700;
+    }
+
+    ion-card {
+      position: relative;
+      text-align: center;
+      margin: 0;
+      width: 100%;
+
+  }  
+   
+  .item.item-block .item-inner {
+    border-bottom: none;
+  }
+
+  
+
+}
+}

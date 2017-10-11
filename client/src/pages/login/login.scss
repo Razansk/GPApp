@@ -1,0 +1,27 @@
+.ios, .md, .wp{
+    page-login {
+        ion-content{
+            background-color:map-get($colors , lighter );
+            button{
+                padding: 0px;
+                color: map-get($colors , deep );
+                font-weight: 900;
+            }
+        }
+
+        ion-item{
+            background-color:map-get($colors , lighter );
+            padding: 0px;
+        }
+
+
+        ion-list{
+        padding: 50px 25px;
+        }
+
+    }
+}
+
+     
+
+

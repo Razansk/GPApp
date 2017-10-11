@@ -1,0 +1,7 @@
+.ios, .md, .wp{
+    page-new-item {
+        .toolbar-background {
+            background-color: map-get($colors , lighter);
+         }
+    }
+}
