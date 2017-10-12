@@ -23,7 +23,7 @@ export class SignUpPage {
    }
 
 register(){
-    this.showLoader();
+      this.showLoader();
  
     let details = {
       
