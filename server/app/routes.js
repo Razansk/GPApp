@@ -15,7 +15,10 @@ module.exports = function(app){
         ProductRoutes = express.Router();
  
     // Get home page 
-    //app.use.get('/',homePageController.getHomePage);
+    //app.use.get('/',function(req, res){
+     //   res.send({content: 'Success'})
+       // console.log('success')
+    //});
 
 
     // Auth Routes
