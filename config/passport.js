@@ -1,4 +1,6 @@
 var passport = require('passport');
+var mongoose = require('mongoose');
+mongoose.Promise = require('bluebird');
 var User = require('../app/models/user');
 var config = require('./auth');
 var JwtStrategy = require('passport-jwt').Strategy;

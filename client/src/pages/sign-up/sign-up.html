@@ -37,15 +37,13 @@
   </ion-list>
   
   <br />
-  <ion-item>
-                    <ion-label>Choose</ion-label>
-                    <ion-select [(ngModel)]="role">
-                        <ion-option value="reader">Customer</ion-option>
-                        <ion-option value="creator">Designer</ion-option>
-                    </ion-select>
-                </ion-item>
-<div>
-     <button ion-button full color="secondary" (click)="register()"> Register</button> 
+ 
+ <div>
+     <button ion-button full color="secondary" (click)="register()"> Designer</button> 
+     <p>or</p>
+     <button ion-button full color="secondary" (click)="register()"> Customer</button>
   </div>
+
+
 
 </ion-content>

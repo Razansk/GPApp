@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+mongoose.Promise = require('bluebird');
 var bcrypt   = require('bcrypt-nodejs');
  
 var UserSchema = new mongoose.Schema({
@@ -22,11 +23,6 @@ var UserSchema = new mongoose.Schema({
         type: String,
         unique: false,
         required: true
-    },
-    role: {
-        type: String,
-        enum: ['customer', 'designer', 'admin'],
-        default: 'customer'
     }
  
 }, {

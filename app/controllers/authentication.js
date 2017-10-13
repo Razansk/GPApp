@@ -1,7 +1,9 @@
 var jwt = require('jsonwebtoken'); 
+var mongoose = require('mongoose');
+mongoose.Promise = require('bluebird');
 var User = require('../models/user');
-var authConfig = require('../../config/auth');// the secret
- 
+var authConfig = require('../../config/auth');
+
 function generateToken(user){
     return jwt.sign(user, authConfig.secret, {
         expiresIn: 10080
@@ -14,7 +16,7 @@ function setUserInfo(request){
         email: request.email,
         phone: request.phone,
         password: request.phone,
-        role: request.role
+        //role: request.role
     };
 }
  
@@ -34,7 +36,7 @@ exports.register = function(req, res, next){
     var email = req.body.email;
     var password = req.body.password;
     var phone = req.body.phone;
-    var role = req.body.role;
+   // var role = req.body.role;
  
     if(!email){
         return res.status(422).send({error: 'You must enter an email address'});
@@ -59,10 +61,25 @@ exports.register = function(req, res, next){
             email: email,
             password: password,
             phone:phone,
-            role: role
+           // role: role
         });
- 
-        user.save(function(err, user){
+        
+    
+         var promise = user.save();
+            //assert.equal(promise instanceof require('bluebird'));
+            promise.then(function (user) {
+                var userInfo = setUserInfo(user);
+                res.status(201).json({
+                    token: 'JWT ' + generateToken(userInfo),
+                    user: userInfo
+                })
+
+             promise.catch(function(err){
+                 return next(err);
+            })
+    });
+      
+   /* user.save(function(err, user){
  
             if(err){
                 return next(err);
@@ -75,7 +92,9 @@ exports.register = function(req, res, next){
                 user: userInfo
             })
  
-        });
+        });*/
+        
+     
  
     });
  

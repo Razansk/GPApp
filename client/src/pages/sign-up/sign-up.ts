@@ -14,7 +14,7 @@ export class SignUpPage {
     email: string;
     phone: string;
     password: string;
-    role: string;
+    //role: string;
     loading: any;
  
    constructor(public navCtrl: NavController,
@@ -31,7 +31,7 @@ register(){
         email: this.email,
         phone: this.phone,
         password: this.password,
-        role: this.role
+        //role: this.role
     };
  
     this.authService.createAccount(details).then((result) => {
