@@ -22,6 +22,7 @@ import { BoutiqueInfoPage } from '../pages/boutique-info/boutique-info';
 import { CollectionPage } from '../pages/collection/collection';;
 import { DOrdersPage } from '../pages/d-orders/d-orders';
 import { NewItemPage } from '../pages/new-item/new-item';
+import { DProfilePage } from '../pages/d-profile/d-profile';
 
 import { IonicStorageModule } from '@ionic/storage' 
 import { Storage } from '@ionic/storage';
@@ -51,6 +52,7 @@ import { ProductsProvider } from '../providers/products/products';
     CardsPage,
     PaymentPage,
     KessaDetailsPage,
+    DProfilePage,
 
     DTabsPage,
     BoutiqueInfoPage,
@@ -84,6 +86,7 @@ import { ProductsProvider } from '../providers/products/products';
     CardsPage,
     PaymentPage,
     KessaDetailsPage,
+    DProfilePage,
 
     DTabsPage,
     BoutiqueInfoPage,

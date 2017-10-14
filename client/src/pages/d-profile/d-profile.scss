@@ -1,3 +1,38 @@
+.ios, .md, .wp{
 page-d-profile {
 
+        ion-header{
+        //back button
+        button{
+            color: map-get($colors , danger);
+        }
+        .toolbar-background {
+             background-color: map-get($colors , lighter);
+        }
+
+    }
+
+    ion-item{
+        padding: 0px;
+    }
+
+
+    ion-list{
+         padding: 40px 25px 30px 25px ;
+    }
+
+    button{
+        padding: 0px;
+        color: map-get($colors , deep );
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+
+    #item{
+        color: map-get($colors , deep);
+        font-weight: 900;
+    }
+
+
+}
 }

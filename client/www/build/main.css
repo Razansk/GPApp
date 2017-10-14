@@ -33123,6 +33123,58 @@ ion-navbar.toolbar {
   background-color: #f3f1f1;
 }
 
+.ios page-d-orders .item, .md page-d-orders .item, .wp page-d-orders .item {
+  padding-left: 0;
+}
+
+.ios page-d-orders .item.item-block .item-inner, .md page-d-orders .item.item-block .item-inner, .wp page-d-orders .item.item-block .item-inner {
+  border-bottom: 0.55px solid #f2f2f2;
+}
+
+.ios page-d-orders .label-ios, .ios page-d-orders .label-md, .ios page-d-orders .label-wp, .md page-d-orders .label-ios, .md page-d-orders .label-md, .md page-d-orders .label-wp, .wp page-d-orders .label-ios, .wp page-d-orders .label-md, .wp page-d-orders .label-wp {
+  margin: 8px 8px 8px 16px;
+}
+
+.ios page-d-orders h2, .md page-d-orders h2, .wp page-d-orders h2 {
+  font-size: 15px;
+}
+
+.ios page-d-orders h1, .md page-d-orders h1, .wp page-d-orders h1 {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #e18484;
+}
+
+.ios page-d-orders .list-ios, .ios page-d-orders .list-md, .ios page-d-orders list-wp, .md page-d-orders .list-ios, .md page-d-orders .list-md, .md page-d-orders list-wp, .wp page-d-orders .list-ios, .wp page-d-orders .list-md, .wp page-d-orders list-wp {
+  margin: 0;
+}
+
+.ios page-d-orders ion-col, .md page-d-orders ion-col, .wp page-d-orders ion-col {
+  padding: 0;
+}
+
+.ios page-d-orders .label ion-label, .md page-d-orders .label ion-label, .wp page-d-orders .label ion-label {
+  font-size: 15px;
+}
+
+.ios .item.item-block .item-inner, .md .item.item-block .item-inner, .wp .item.item-block .item-inner {
+  padding-right: 0px;
+  border-bottom: 0px solid #eeecf3;
+}
+
+.ios .order-info .item.item-block .item-inner, .md .order-info .item.item-block .item-inner, .wp .order-info .item.item-block .item-inner {
+  border-bottom: 0px solid #f2f2f2;
+}
+
+.ios h4, .md h4, .wp h4 {
+  font-size: 1.4rem;
+}
+
+.ios ion-list-header, .md ion-list-header, .wp ion-list-header {
+  color: #e18484;
+}
+
 .ios page-home ion-content, .md page-home ion-content, .wp page-home ion-content {
   background-color: #f3f1f1;
 }

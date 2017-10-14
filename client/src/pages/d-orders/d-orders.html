@@ -6,6 +6,31 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
 
+   <div style="margin: 10px 0 0 0;">
+
+
+      <ion-list >
+         <!--list of orders-->
+         <ion-item no-lines class="items"  >
+           <ion-list-header>List of orders</ion-list-header>
+          <h4>Order #</h4>
+         <h4 style="margin-top:0px;"> Client Name: {{name}} </h4>
+         <h4 style="margin-top:0px;"> Client Phone: {{Phone}} </h4>
+         <h4 style="margin-top:0px;"> Client Size: {{Size}} </h4>
+         <!--list of items-->
+            <ion-list >
+              <ion-item>
+                <ion-list-header>List of Items</ion-list-header>
+                <h4 style="margin-top:0px;"> Item Name: {{Pname}} </h4>
+                <h4 style="margin-top:0px;"> Item color: {{Pname}} </h4>
+              </ion-item>
+            </ion-list>
+         </ion-item>
+         <h4 style="margin-top:10px;margin-bottom:0px; font-size:15px; padding-left:16px">Total </h4>
+
+         <hr >
+      </ion-list>
+   </div>
 </ion-content>

@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the DOrdersPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
+
 
 @Component({
   selector: 'page-d-orders',
@@ -20,5 +15,7 @@ export class DOrdersPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad DOrdersPage');
   }
+
+ 
 
 }
