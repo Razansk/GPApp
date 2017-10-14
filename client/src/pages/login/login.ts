@@ -26,39 +26,39 @@ export class LoginPage {
 
     ionViewDidLoad() {
  
-        // this.showLoader();
+        this.showLoader();
  
-        //Check if already authenticated
-        // this.authService.checkAuthentication().then((res) => {
-        //     console.log("Already authorized");
-        //     this.loading.dismiss();
-        //     this.navCtrl.setRoot(HomePage);
-        // }, (err) => {
-        //     console.log("Not already authorized");
-        //     this.loading.dismiss();
-        // });
+        // Check if already authenticated
+        this.authService.checkAuthentication().then((res) => {
+            console.log("Already authorized");
+            this.loading.dismiss();
+            this.navCtrl.setRoot(HomePage);
+        }, (err) => {
+            console.log("Not already authorized");
+            this.loading.dismiss();
+        });
  
     }
  
     login(){
  
-        // this.showLoader();
+        this.showLoader();
  
-        // let credentials = {
-        //     email: this.email,
-        //     password: this.password
-        // };
+        let credentials = {
+            email: this.email,
+            password: this.password
+        };
  
-        // this.authService.login(credentials).then((result) => {
-        //     this.loading.dismiss();
-        //     console.log(result);
-        //     this.navCtrl.setRoot(HomePage);
-        // }, (err) => {
-        //     this.loading.dismiss();
-        //     console.log(err);
-        // });
+        this.authService.login(credentials).then((result) => {
+            this.loading.dismiss();
+            console.log(result);
+            this.navCtrl.setRoot(HomePage);
+        }, (err) => {
+            this.loading.dismiss();
+            console.log(err);
+        });
 
-         this.navCtrl.setRoot(BoutiqueInfoPage);
+        //  this.navCtrl.setRoot(BoutiqueInfoPage);
  
     }
  
@@ -66,14 +66,14 @@ export class LoginPage {
         this.navCtrl.push(SignUpPage);
     }
  
-    // showLoader(){
+    showLoader(){
  
-    //     this.loading = this.loadingCtrl.create({
-    //         content: 'Authenticating...'
-    //     });
+        this.loading = this.loadingCtrl.create({
+            content: 'Authenticating...'
+        });
  
-    //     this.loading.present();
+        this.loading.present();
  
-    // }
+    }
  
 }
