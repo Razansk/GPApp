@@ -17,33 +17,32 @@
   <ion-list >
       <ion-item >
           <ion-label>Name:</ion-label>
-          <ion-input [(ngModel)]="name"floating type="text" placeholder="Ghada Abdulaziz" > </ion-input>
+          <ion-input [(ngModel)]="name"floating type="text" placeholder="Ghada Abdulaziz" ngDefaultControl > </ion-input>
       </ion-item>
 
       <ion-item>
           <ion-label>Email:</ion-label>
-          <ion-input [(ngModel)]="email" floating type="email" placeholder="******@*****.com" ></ion-input>
+          <ion-input [(ngModel)]="email" floating type="email" placeholder="******@*****.com" ngDefaultControl ></ion-input>
       </ion-item>
 
       <ion-item>
           <ion-label>Phone:</ion-label>
-          <ion-input [(ngModel)]="phone" floating type="phone" placeholder="+96655*******">Phone:</ion-input>
+          <ion-input [(ngModel)]="phone" floating type="phone" placeholder="+96655*******" ngDefaultControl>Phone:</ion-input>
       </ion-item>
 
       <ion-item >
           <ion-label>Password:</ion-label>
-          <ion-input [(ngModel)]="password" floating type="password" placeholder="Password"></ion-input>
+          <ion-input [(ngModel)]="password" floating type="password" placeholder="Password" ngDefaultControl></ion-input>
       </ion-item >
   </ion-list>
   
   <br />
  
  <div>
-     <button ion-button full color="secondary" (click)="register()"> Designer</button> 
+     <button ion-button [(ngModel)]="role" value="2" full color="secondary" (click)="register()" ngDefaultControl> Designer</button> 
      <p>or</p>
-     <button ion-button full color="secondary" (click)="register()"> Customer</button>
+     <button ion-button [(ngModel)]="role" value="1" full color="secondary" (click)="register()" ngDefaultControl > Customer</button>
   </div>
-
 
 
 </ion-content>

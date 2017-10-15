@@ -33175,6 +33175,34 @@ ion-navbar.toolbar {
   color: #e18484;
 }
 
+.ios page-d-profile ion-header button, .md page-d-profile ion-header button, .wp page-d-profile ion-header button {
+  color: #a3bac2;
+}
+
+.ios page-d-profile ion-header .toolbar-background, .md page-d-profile ion-header .toolbar-background, .wp page-d-profile ion-header .toolbar-background {
+  background-color: #f3f1f1;
+}
+
+.ios page-d-profile ion-item, .md page-d-profile ion-item, .wp page-d-profile ion-item {
+  padding: 0px;
+}
+
+.ios page-d-profile ion-list, .md page-d-profile ion-list, .wp page-d-profile ion-list {
+  padding: 40px 25px 30px 25px;
+}
+
+.ios page-d-profile button, .md page-d-profile button, .wp page-d-profile button {
+  padding: 0px;
+  color: #5d7389;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.ios page-d-profile #item, .md page-d-profile #item, .wp page-d-profile #item {
+  color: #5d7389;
+  font-weight: 900;
+}
+
 .ios page-home ion-content, .md page-home ion-content, .wp page-home ion-content {
   background-color: #f3f1f1;
 }

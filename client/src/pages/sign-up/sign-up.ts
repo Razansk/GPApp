@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, LoadingController} from 'ionic-angular';
 import { AuthProvider } from '../../providers/auth/auth';
 import {NewArrivalsPage} from '../new-arrivals/new-arrivals';
+import { Http, Headers } from "@angular/http";
+import { DTabsPage } from '../d-tabs/d-tabs';
 
 
 
@@ -14,13 +16,13 @@ export class SignUpPage {
     email: string;
     phone: string;
     password: string;
-    //role: string;
+    role: any;
     loading: any;
- 
+    router: any;
+
    constructor(public navCtrl: NavController,
     public authService: AuthProvider, 
-    public loadingCtrl: LoadingController) {
-   }
+    public loadingCtrl: LoadingController) {}
 
 register(){
       this.showLoader();
@@ -31,20 +33,28 @@ register(){
         email: this.email,
         phone: this.phone,
         password: this.password,
-        //role: this.role
+        role: this.role
     };
+      
  
     this.authService.createAccount(details).then((result) => {
       this.loading.dismiss();
+      if(this.role === 1)
+            this.navCtrl.setRoot(NewArrivalsPage);
+      else{
+            this.navCtrl.setRoot(DTabsPage);
+              }
       console.log(result);
-      this.navCtrl.setRoot(NewArrivalsPage);
-    }, (err) => {
+    },
+       (err) => {
         this.loading.dismiss();
     });
 
 
-    // this.navCtrl.setRoot(TabsPage);
   }
+
+ 
+    
  
   showLoader(){
  
