@@ -1,29 +1,38 @@
 <ion-header>
   <ion-navbar >
-    <ion-title class="toolbar">Catagorizes</ion-title>
+    <ion-title class="toolbar">Categories</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content  class="card-background-page" no-padding no-margin>
-  <ion-card>
-    <img src="../assets/img/logo.png"/>
-    <div class="card-title">All Black Kesssa</div>
+
+
+<ion-content class="card-background-page" padding-vertical>
+  
+   
+ <div>
+   <ion-card>
+    <img src="../assets/img/logo.png"/>   
+    <button ion-button [(ngModel)]="role"  full color="secondary" (click)="getProducts()" ngDefaultControl> All Black Kessa</button>
   </ion-card>
 
-  <ion-card>
-    <img src="../assets/img/logo.png"/>
-    <div class="card-title">Night Kesssa</div>
+   <ion-card>
+    <img src="../assets/img/logo.png"/>   
+    <button ion-button [(ngModel)]="role"  full color="secondary" (click)="getProducts()" ngDefaultControl> Night Kessa</button>
   </ion-card>
 
-  <ion-card>
-    <img src="../assets/img/logo.png"/>
-    <div class="card-title">Daily Kesssa</div>
+   <ion-card>
+    <img src="../assets/img/logo.png"/>   
+    <button ion-button [(ngModel)]="role"  full color="secondary" (click)="getProducts()" ngDefaultControl> Daily Kessa</button>
   </ion-card>
 
-  <ion-card>
-    <img src="../assets/img/logo.png"/>
-    <div class="card-title">Scarfs</div>
+   <ion-card>
+    <img src="../assets/img/logo.png"/>   
+    <button ion-button [(ngModel)]="role"  full color="secondary" (click)="getProducts()" ngDefaultControl> Scarves</button>
   </ion-card>
 
+ </div>
 
 </ion-content>
+
+
+

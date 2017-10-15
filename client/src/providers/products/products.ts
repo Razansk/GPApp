@@ -9,7 +9,7 @@ export class ProductsProvider {
  
   }
  
-  getProducts(){
+  loopProducts(){
  
     return new Promise((resolve, reject) => {
       let productsArray = [JSON];

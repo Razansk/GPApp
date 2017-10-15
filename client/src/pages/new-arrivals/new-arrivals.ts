@@ -14,7 +14,7 @@ export class NewArrivalsPage {
 
  ionViewDidLoad(){
  
-    this.productService.getProducts().then((data) => {
+    this.productService.loopProducts().then((data) => {
           this.products = data;
     
     });
