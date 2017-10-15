@@ -4,6 +4,7 @@ import { HomePage } from '../home/home';
 import { AuthProvider } from '../../providers/auth/auth';
 import { SignUpPage } from '../sign-up/sign-up';
 import { BoutiqueInfoPage } from '../boutique-info/boutique-info'; //Designer app
+import {NewArrivalsPage} from '../new-arrivals/new-arrivals';
 
 
 
@@ -32,7 +33,8 @@ export class LoginPage {
         this.authService.checkAuthentication().then((res) => {
             console.log("Already authorized");
             this.loading.dismiss();
-            this.navCtrl.setRoot(HomePage);
+            this.navCtrl.setRoot(NewArrivalsPage);
+
         }, (err) => {
             console.log("Not already authorized");
             this.loading.dismiss();
