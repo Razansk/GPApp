@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, LoadingController} from 'ionic-angular';
 import { AuthProvider } from '../../providers/auth/auth';
-import {NewArrivalsPage} from '../new-arrivals/new-arrivals';
 import { Http, Headers } from "@angular/http";
 import { DTabsPage } from '../d-tabs/d-tabs';
-
+import { TabsPage } from '../tabs/tabs';
 
 
 @Component({
@@ -40,7 +39,7 @@ register(){
     this.authService.createAccount(details).then((result) => {
       this.loading.dismiss();
       if(this.role === 1)
-            this.navCtrl.setRoot(NewArrivalsPage);
+            this.navCtrl.setRoot(TabsPage);
       else{
             this.navCtrl.setRoot(DTabsPage);
               }
