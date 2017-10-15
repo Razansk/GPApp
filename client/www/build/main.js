@@ -215,10 +215,11 @@ SignUpPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-sign-up',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/sign-up/sign-up.html"*/'<!--\n  Generated template for the SignUpPage page.\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title class="toolbar">Sign Up</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content  padding-vertical>\n  \n  <ion-list >\n      <ion-item >\n          <ion-label>Name:</ion-label>\n          <ion-input [(ngModel)]="name"floating type="text" placeholder="Ghada Abdulaziz" ngDefaultControl > </ion-input>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Email:</ion-label>\n          <ion-input [(ngModel)]="email" floating type="email" placeholder="******@*****.com" ngDefaultControl ></ion-input>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Phone:</ion-label>\n          <ion-input [(ngModel)]="phone" floating type="phone" placeholder="+96655*******" ngDefaultControl>Phone:</ion-input>\n      </ion-item>\n\n      <ion-item >\n          <ion-label>Password:</ion-label>\n          <ion-input [(ngModel)]="password" floating type="password" placeholder="Password" ngDefaultControl></ion-input>\n      </ion-item >\n  </ion-list>\n  \n  <br />\n \n <div>\n     <button ion-button [(ngModel)]="role" value="2" full color="secondary" (click)="registerDesigner()" ngDefaultControl> Designer</button> \n     <p>or</p>\n     <button ion-button [(ngModel)]="role" value="1" full color="secondary" (click)="registerCustomer()" ngDefaultControl > Customer</button>\n  </div>\n\n\n</ion-content>'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/sign-up/sign-up.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__["a" /* AuthProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__["a" /* AuthProvider */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
+        __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__["a" /* AuthProvider */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */]])
 ], SignUpPage);
 
-var _a, _b, _c;
 //# sourceMappingURL=sign-up.js.map
 
 /***/ }),
@@ -304,7 +305,7 @@ var DTabsPage = (function () {
     return DTabsPage;
 }());
 DTabsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\d-tabs\d-tabs.html"*/'<ion-tabs cless="tabs" [color]=" \'danger\' ">\n  <ion-tab cless="tabs" [root]="tab1Root" tabTitle="Collection" tabIcon="md-albums"></ion-tab>\n  <ion-tab cless="tabs" [root]="tab2Root" tabTitle="Orders" tabIcon="md-copy"></ion-tab>\n  <ion-tab cless="tabs" [root]="tab3Root" tabTitle="New Kessa" tabIcon="md-add"></ion-tab>\n  <ion-tab cless="tabs" [root]="tab4Root" tabTitle="Profile" tabIcon="ios-contact-outline"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\d-tabs\d-tabs.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/d-tabs/d-tabs.html"*/'<ion-tabs cless="tabs" [color]=" \'danger\' ">\n  <ion-tab cless="tabs" [root]="tab1Root" tabTitle="Collection" tabIcon="md-albums"></ion-tab>\n  <ion-tab cless="tabs" [root]="tab2Root" tabTitle="Orders" tabIcon="md-copy"></ion-tab>\n  <ion-tab cless="tabs" [root]="tab3Root" tabTitle="New Kessa" tabIcon="md-add"></ion-tab>\n  <ion-tab cless="tabs" [root]="tab4Root" tabTitle="Profile" tabIcon="ios-contact-outline"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/d-tabs/d-tabs.html"*/,
     }),
     __metadata("design:paramtypes", [])
 ], DTabsPage);
@@ -437,134 +438,6 @@ LoginPage = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-<<<<<<< HEAD
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CollectionPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var CollectionPage = (function () {
-    function CollectionPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    CollectionPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CollectionPage');
-    };
-    return CollectionPage;
-}());
-CollectionPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-collection',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/collection/collection.html"*/'\n<ion-header>\n  <ion-navbar >\n    <ion-title >Collection</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding-vertical >\n   <div  class="prod">         \n         <div >\n            <div class="card-background-page grid" >\n               <ion-row class="row unlimited-items">\n                  <ion-col class="col" >\n                     <ion-card>\n                       <!--item img-->\n                        <ion-card-content style="padding: 0px;" class="stock">\n                           <a (click)="getProductDetails()">\n                              <img src="../assets/img/logo.png">\n                           </a>\n                        </ion-card-content>\n                        <!--item name-->\n                        <ion-label color="deep"><strong>Item Name</strong></ion-label>\n                     </ion-card>\n                  </ion-col>\n\n                  <!-- second item -->\n                <ion-col class="col" >\n                  <ion-card>\n                    <!--item img-->\n                    <ion-card-content style="padding: 0px;" class="stock">\n                      <a (click)="getProductDetails()">\n                        <img src="../assets/img/logo.png">\n                      </a>\n                    </ion-card-content>\n                    <!--item name-->\n                    <ion-label color="deep"><strong>Item Name</strong></ion-label>\n                  </ion-card>\n                </ion-col>\n            \n               </ion-row>\n               <!--end of row-->\n            </div>\n         </div>\n         <!-- end of drid view -->   \n\n   </div>\n</ion-content>\n\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/collection/collection.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-], CollectionPage);
-
-//# sourceMappingURL=collection.js.map
-
-/***/ }),
-
-/***/ 203:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DOrdersPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var DOrdersPage = (function () {
-    function DOrdersPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    DOrdersPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad DOrdersPage');
-    };
-    return DOrdersPage;
-}());
-DOrdersPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-d-orders',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/d-orders/d-orders.html"*/'\n<ion-header>\n  <ion-navbar >\n    <ion-title >Orders</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n\n   <div style="margin: 10px 0 0 0;">\n\n\n      <ion-list >\n         <!--list of orders-->\n         <ion-item no-lines class="items"  >\n           <ion-list-header>List of orders</ion-list-header>\n          <h4>Order #</h4>\n         <h4 style="margin-top:0px;"> Client Name: {{name}} </h4>\n         <h4 style="margin-top:0px;"> Client Phone: {{Phone}} </h4>\n         <h4 style="margin-top:0px;"> Client Size: {{Size}} </h4>\n         <!--list of items-->\n            <ion-list >\n              <ion-item>\n                <ion-list-header>List of Items</ion-list-header>\n                <h4 style="margin-top:0px;"> Item Name: {{Pname}} </h4>\n                <h4 style="margin-top:0px;"> Item color: {{Pname}} </h4>\n              </ion-item>\n            </ion-list>\n         </ion-item>\n         <h4 style="margin-top:10px;margin-bottom:0px; font-size:15px; padding-left:16px">Total </h4>\n\n         <hr >\n      </ion-list>\n   </div>\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/d-orders/d-orders.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-], DOrdersPage);
-
-//# sourceMappingURL=d-orders.js.map
-
-/***/ }),
-
-/***/ 204:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewItemPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(51);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
- //Customer Home Page
-var NewItemPage = (function () {
-    function NewItemPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    NewItemPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad NewItemPage');
-    };
-    NewItemPage.prototype.addProduct = function () {
-        console.log('added');
-        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__tabs_tabs__["a" /* TabsPage */]);
-    };
-    NewItemPage.prototype.uplodFile = function () {
-    };
-    return NewItemPage;
-}());
-NewItemPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-new-item',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/new-item/new-item.html"*/'\n<ion-header >\n  <ion-navbar >\n    <ion-title >New Kessa</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding-vertical >\n  <div padding>\n    <form >\n        <ion-list>\n          <ion-item>\n              <ion-label>Name:</ion-label>\n              <ion-input floating type="text" placeholder="Product Name" #name > </ion-input>\n          </ion-item>\n\n          <ion-item >\n              <ion-label>category</ion-label>\n              <ion-select >\n              <ion-option color="secondary" >All black Kessa</ion-option>\n              <ion-option color="secondary" >Daily Kessa</ion-option>\n              <ion-option color="secondary" >Night Kessa</ion-option>\n              <ion-option color="secondary" >Scarfs</ion-option>\n              </ion-select>\n          </ion-item>\n\n          <ion-item>\n              <ion-label >Price</ion-label>\n              <ion-input floating type="number" placeholder="150"></ion-input>\n          </ion-item>\n\n          <ion-item class="option">\n              <ion-label>InStock</ion-label>\n              <ion-toggle checked="true" ></ion-toggle>\n          </ion-item>\n\n\n          <ion-item>\n              <ion-label >Description</ion-label>\n              <ion-textarea rows="4" floating type="text" placeholder="text text"></ion-textarea>\n          </ion-item>\n\n          <ion-item>\n              <ion-thumbnail>\n                <img >\n              </ion-thumbnail>\n              <input type="file" name="Choose File" (click)="uplodFile()">\n          </ion-item>\n        </ion-list>\n    </form>\n  </div>\n\n  <div>\n    <button ion-button full color="primery" (click)="login()">save</button>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/new-item/new-item.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-], NewItemPage);
-
-//# sourceMappingURL=new-item.js.map
-
-/***/ }),
-
-/***/ 205:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-=======
->>>>>>> b3e63c847b22093ce849ca0ce9977d87c37411ee
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProductsProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(49);
@@ -618,6 +491,7 @@ ProductsProvider = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__c_orders_c_orders__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cards_cards__ = __webpack_require__(285);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -630,7 +504,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-// import { CardsPage } from '../cards/cards';
+
 var ProfilePage = (function () {
     function ProfilePage(navCtrl) {
         this.navCtrl = navCtrl;
@@ -638,15 +512,19 @@ var ProfilePage = (function () {
     ProfilePage.prototype.Orders = function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__c_orders_c_orders__["a" /* COrdersPage */]);
     };
+    ProfilePage.prototype.Cards = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__cards_cards__["a" /* CardsPage */]);
+    };
     return ProfilePage;
 }());
 ProfilePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-profile',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/profile/profile.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="toolbar">\n      Profile\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list >\n      <ion-item >\n          <ion-label id="item">Name:</ion-label>\n          <ion-label #name >Ghada Abdulaziz</ion-label>\n      </ion-item>\n\n      <ion-item>\n          <ion-label id="item">Email:</ion-label>\n          <ion-label #email >******@*****.com</ion-label>\n      </ion-item>\n\n      <ion-item>\n          <ion-label id="item">Phone:</ion-label>\n          <ion-label #phone >+96655*******</ion-label>\n      </ion-item>\n\n      <ion-item >\n          <ion-label id="item">Password:</ion-label>\n          <ion-label #password>*******</ion-label>\n      </ion-item >\n\n      <ion-item > \n        <ion-label id="item">Country:</ion-label>\n        <ion-select [(ngModel)]="Country">\n          <ion-option value="SA">Saudi Arabia</ion-option>\n          <ion-option value="BH">Bahrain</ion-option>\n          <ion-option value="KW">Kuwait</ion-option>\n          <ion-option value="OM">Oman</ion-option>\n          <ion-option value="QA">Qatar</ion-option>\n          <ion-option value="AE">UAE</ion-option>\n        </ion-select>\n      </ion-item >\n\n  </ion-list>\n\n\n  <br />\n  <div>\n     <button ion-button full color="secondary" (click)="Orders()">Previous Orders</button> \n     <button ion-button full color="secondary" (click)="Cards()"> Cards</button>\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/profile/profile.html"*/
+        selector: 'page-profile',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/profile/profile.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="toolbar">\n      Profile\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list >\n      <ion-item >\n          <ion-label id="item">Name:</ion-label>\n          <ion-label #name >Ghada Abdulaziz</ion-label>\n      </ion-item>\n\n      <ion-item>\n          <ion-label id="item">Email:</ion-label>\n          <ion-label #email >******@*****.com</ion-label>\n      </ion-item>\n\n      <ion-item>\n          <ion-label id="item">Phone:</ion-label>\n          <ion-label #phone >+96655*******</ion-label>\n      </ion-item>\n\n      <ion-item >\n          <ion-label id="item">Password:</ion-label>\n          <ion-label #password>*******</ion-label>\n      </ion-item >\n\n      <ion-item > \n        <ion-label id="item">Country:</ion-label>\n        <ion-select [(ngModel)]="Country">\n          <ion-option value="SA">Saudi Arabia</ion-option>\n          <ion-option value="BH">Bahrain</ion-option>\n          <ion-option value="KW">Kuwait</ion-option>\n          <ion-option value="OM">Oman</ion-option>\n          <ion-option value="QA">Qatar</ion-option>\n          <ion-option value="AE">UAE</ion-option>\n        </ion-select>\n      </ion-item >\n\n  </ion-list>\n\n\n  <br />\n  <div>\n     <!--<button ion-button full color="secondary" (click)="Orders()">Previous Orders</button> -->\n     <button ion-button full color="secondary" (click)="Cards()"> Cards</button>\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/profile/profile.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object])
 ], ProfilePage);
 
+var _a;
 //# sourceMappingURL=profile.js.map
 
 /***/ }),
@@ -729,12 +607,11 @@ var CategorizesPage = (function () {
 }());
 CategorizesPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-categorizes',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/categorizes/categorizes.html"*/'<ion-header>\n  <ion-navbar >\n    <ion-title class="toolbar">Catagorizes</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content  class="card-background-page" no-padding no-margin>\n  <ion-card (click)=show()>\n    <img src="../assets/img/logo.png"/>\n    <div class="card-title">All Black Kesssa</div>\n  </ion-card>\n\n  <ion-card>\n    <img src="../assets/img/abaya1.jpg"/>\n    <div class="card-title">Night Kesssa</div>\n  </ion-card>\n\n  <ion-card>\n    <img src="../assets/img/logo.png"/>\n    <div class="card-title">Daily Kesssa</div>\n  </ion-card>\n\n  <ion-card>\n    <img src="../assets/img/logo.png"/>\n    <div class="card-title">Scarfs</div>\n  </ion-card>\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/categorizes/categorizes.html"*/
+        selector: 'page-categorizes',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/categorizes/categorizes.html"*/'<ion-header>\n  <ion-navbar >\n    <ion-title class="toolbar">Catagorizes</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content  class="card-background-page" no-padding no-margin>\n  <ion-card (click)=show()>\n    <img src="../assets/img/abaya4.jpg"/>\n    <div class="card-title">All Black Kesssa</div>\n  </ion-card>\n\n  <ion-card>\n    <img src="../assets/img/abaya1.jpg"/>\n    <div class="card-title">Night Kesssa</div>\n  </ion-card>\n\n  <ion-card>\n    <img src="../assets/img/abaya2.jpg"/>\n    <div class="card-title">Daily Kesssa</div>\n  </ion-card>\n\n  <ion-card>\n    <img src="../assets/img/abaya3.jpg"/>\n    <div class="card-title">Scarfs</div>\n  </ion-card>\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/categorizes/categorizes.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
 ], CategorizesPage);
 
-var _a;
 //# sourceMappingURL=categorizes.js.map
 
 /***/ }),
@@ -870,7 +747,7 @@ var BoutiqueInfoPage = (function () {
 }());
 BoutiqueInfoPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-boutique-info',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\boutique-info\boutique-info.html"*/'<ion-header>\n  <ion-navbar >\n    <ion-title >Boutique Info</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content >\n\n  <ion-list id="info">\n      <ion-item >\n          <ion-label id="item" >Boutique name:</ion-label>\n          <ion-label #name >AbayaBoutique</ion-label>\n      </ion-item>\n\n      <ion-item>\n          <ion-label >Instagram account:</ion-label>\n          <ion-input floating type="text" placeholder="@*****" #instagram ></ion-input>\n      </ion-item>\n  </ion-list>\n\n  <ion-list > \n      <ion-list-header >The boutiqe ships to:</ion-list-header>\n      <ion-item >\n          <ion-label>Saudi Arabia</ion-label>\n          <ion-checkbox color="secondary" checked="true"></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Bahrain</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Kuwait</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Oman</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Qatar</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>UAE</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n  </ion-list>\n\n  <ion-list >\n      <ion-list-header >online payment information</ion-list-header>\n      <ion-item>\n          <ion-label >Card number:</ion-label>\n          <ion-input floating type="text" placeholder="" #CNum ></ion-input>\n      </ion-item>\n\n      <ion-item >\n          <ion-label >Name on the card:</ion-label>\n          <ion-input floating type="text" placeholder="Ghada Bin Farhan" #CName></ion-input>\n      </ion-item > \n\n      <ion-item >\n          <ion-label >Bank</ion-label>\n          <ion-input floating type="text" placeholder="Bank Name" #CName></ion-input>\n      </ion-item >\n\n      <ion-item > \n        <ion-label >Country:</ion-label>\n        <ion-select [(ngModel)]="Country">\n          <ion-option value="SA">Saudi Arabia</ion-option>\n          <ion-option value="BH">Bahrain</ion-option>\n          <ion-option value="KW">Kuwait</ion-option>\n          <ion-option value="OM">Oman</ion-option>\n          <ion-option value="QA">Qatar</ion-option>\n          <ion-option value="AE">UAE</ion-option>\n        </ion-select>\n      </ion-item >\n\n  </ion-list>\n\n\n\n\n  <button ion-button full color="primery" (click)="RejesterBoutiqe()"> Rejester Boutiqe</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\boutique-info\boutique-info.html"*/,
+        selector: 'page-boutique-info',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/boutique-info/boutique-info.html"*/'<ion-header>\n  <ion-navbar >\n    <ion-title >Boutique Info</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content >\n\n  <ion-list id="info">\n      <ion-item >\n          <ion-label id="item" >Boutique name:</ion-label>\n          <ion-label #name >AbayaBoutique</ion-label>\n      </ion-item>\n\n      <ion-item>\n          <ion-label >Instagram account:</ion-label>\n          <ion-input floating type="text" placeholder="@*****" #instagram ></ion-input>\n      </ion-item>\n  </ion-list>\n\n  <ion-list > \n      <ion-list-header >The boutiqe ships to:</ion-list-header>\n      <ion-item >\n          <ion-label>Saudi Arabia</ion-label>\n          <ion-checkbox color="secondary" checked="true"></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Bahrain</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Kuwait</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Oman</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Qatar</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>UAE</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n  </ion-list>\n\n  <ion-list >\n      <ion-list-header >online payment information</ion-list-header>\n      <ion-item>\n          <ion-label >Card number:</ion-label>\n          <ion-input floating type="text" placeholder="" #CNum ></ion-input>\n      </ion-item>\n\n      <ion-item >\n          <ion-label >Name on the card:</ion-label>\n          <ion-input floating type="text" placeholder="Ghada Bin Farhan" #CName></ion-input>\n      </ion-item > \n\n      <ion-item >\n          <ion-label >Bank</ion-label>\n          <ion-input floating type="text" placeholder="Bank Name" #CName></ion-input>\n      </ion-item >\n\n      <ion-item > \n        <ion-label >Country:</ion-label>\n        <ion-select [(ngModel)]="Country">\n          <ion-option value="SA">Saudi Arabia</ion-option>\n          <ion-option value="BH">Bahrain</ion-option>\n          <ion-option value="KW">Kuwait</ion-option>\n          <ion-option value="OM">Oman</ion-option>\n          <ion-option value="QA">Qatar</ion-option>\n          <ion-option value="AE">UAE</ion-option>\n        </ion-select>\n      </ion-item >\n\n  </ion-list>\n\n\n\n\n  <button ion-button full color="primery" (click)="RejesterBoutiqe()"> Rejester Boutiqe</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/boutique-info/boutique-info.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
 ], BoutiqueInfoPage);
@@ -909,7 +786,7 @@ var CollectionPage = (function () {
 }());
 CollectionPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-collection',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\collection\collection.html"*/'\n<ion-header>\n  <ion-navbar >\n    <ion-title >Collection</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding-vertical >\n   <div  class="prod">         \n         <div >\n            <div class="card-background-page grid" >\n               <ion-row class="row unlimited-items">\n                  <ion-col class="col" >\n                     <ion-card>\n                       <!--item img-->\n                        <ion-card-content style="padding: 0px;" class="stock">\n                           <a (click)="getProductDetails()">\n                              <img src="../assets/img/logo.png">\n                           </a>\n                        </ion-card-content>\n                        <!--item name-->\n                        <ion-label color="deep"><strong>Item Name</strong></ion-label>\n                     </ion-card>\n                  </ion-col>\n\n                  <!-- second item -->\n                <ion-col class="col" >\n                  <ion-card>\n                    <!--item img-->\n                    <ion-card-content style="padding: 0px;" class="stock">\n                      <a (click)="getProductDetails()">\n                        <img src="../assets/img/logo.png">\n                      </a>\n                    </ion-card-content>\n                    <!--item name-->\n                    <ion-label color="deep"><strong>Item Name</strong></ion-label>\n                  </ion-card>\n                </ion-col>\n            \n               </ion-row>\n               <!--end of row-->\n            </div>\n         </div>\n         <!-- end of drid view -->   \n\n   </div>\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\collection\collection.html"*/,
+        selector: 'page-collection',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/collection/collection.html"*/'\n<ion-header>\n  <ion-navbar >\n    <ion-title >Collection</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding-vertical >\n   <div  class="prod">         \n         <div >\n            <div class="card-background-page grid" >\n               <ion-row class="row unlimited-items">\n                  <ion-col class="col" >\n                     <ion-card>\n                       <!--item img-->\n                        <ion-card-content style="padding: 0px;" class="stock">\n                           <a (click)="getProductDetails()">\n                              <img src="../assets/img/abaya2.jpg">\n                           </a>\n                        </ion-card-content>\n                        <!--item name-->\n                        <ion-label color="deep"><strong>Clasic Kessa</strong></ion-label>\n                     </ion-card>\n                  </ion-col>\n\n                  <!-- second item -->\n                <ion-col class="col" >\n                  <ion-card>\n                    <!--item img-->\n                    <ion-card-content style="padding: 0px;" class="stock">\n                      <a (click)="getProductDetails()">\n                        <img src="../assets/img/abaya3.jpg">\n                      </a>\n                    </ion-card-content>\n                    <!--item name-->\n                    <ion-label color="deep"><strong>Beige Kessa</strong></ion-label>\n                  </ion-card>\n                </ion-col>\n            \n               </ion-row>\n               <!--end of row-->\n            </div>\n         </div>\n         <!-- end of drid view -->   \n\n   </div>\n</ion-content>\n\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/collection/collection.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
 ], CollectionPage);
@@ -948,7 +825,7 @@ var DOrdersPage = (function () {
 }());
 DOrdersPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-d-orders',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\d-orders\d-orders.html"*/'\n<ion-header>\n  <ion-navbar >\n    <ion-title >Orders</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n\n   <div style="margin: 10px 0 0 0;">\n\n\n      <ion-list >\n         <!--list of orders-->\n         <ion-item no-lines class="items"  >\n           <ion-list-header>List of orders</ion-list-header>\n          <h4>Order #</h4>\n         <h4 style="margin-top:0px;"> Client Name: {{name}} </h4>\n         <h4 style="margin-top:0px;"> Client Phone: {{Phone}} </h4>\n         <h4 style="margin-top:0px;"> Client Size: {{Size}} </h4>\n         <!--list of items-->\n            <ion-list >\n              <ion-item>\n                <ion-list-header>List of Items</ion-list-header>\n                <h4 style="margin-top:0px;"> Item Name: {{Pname}} </h4>\n                <h4 style="margin-top:0px;"> Item color: {{Pname}} </h4>\n              </ion-item>\n            </ion-list>\n         </ion-item>\n         <h4 style="margin-top:10px;margin-bottom:0px; font-size:15px; padding-left:16px">Total </h4>\n\n         <hr >\n      </ion-list>\n   </div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\d-orders\d-orders.html"*/,
+        selector: 'page-d-orders',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/d-orders/d-orders.html"*/'\n<ion-header>\n  <ion-navbar >\n    <ion-title >Orders</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n\n   <div style="margin: 10px 0 0 0;">\n\n\n      <ion-list >\n         <!--list of orders-->\n         <ion-item no-lines class="items"  >\n           <ion-list-header>List of orders</ion-list-header>\n          <h4>Order #</h4>\n         <h4 style="margin-top:0px;"> Client Name: {{name}} </h4>\n         <h4 style="margin-top:0px;"> Client Phone: {{Phone}} </h4>\n         <h4 style="margin-top:0px;"> Client Size: {{Size}} </h4>\n         <!--list of items-->\n            <ion-list >\n              <ion-item>\n                <ion-list-header>List of Items</ion-list-header>\n                <h4 style="margin-top:0px;"> Item Name: {{Pname}} </h4>\n                <h4 style="margin-top:0px;"> Item color: {{Pname}} </h4>\n              </ion-item>\n            </ion-list>\n         </ion-item>\n         <h4 style="margin-top:10px;margin-bottom:0px; font-size:15px; padding-left:16px">Total </h4>\n\n         <hr >\n      </ion-list>\n   </div>\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/d-orders/d-orders.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
 ], DOrdersPage);
@@ -995,7 +872,7 @@ var NewItemPage = (function () {
 }());
 NewItemPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-new-item',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\new-item\new-item.html"*/'\n<ion-header >\n  <ion-navbar >\n    <ion-title >New Kessa</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding-vertical >\n  <div padding>\n    <form >\n        <ion-list>\n          <ion-item>\n              <ion-label>Name:</ion-label>\n              <ion-input floating type="text" placeholder="Product Name" #name > </ion-input>\n          </ion-item>\n\n          <ion-item >\n              <ion-label>category</ion-label>\n              <ion-select >\n              <ion-option color="secondary" >All black Kessa</ion-option>\n              <ion-option color="secondary" >Daily Kessa</ion-option>\n              <ion-option color="secondary" >Night Kessa</ion-option>\n              <ion-option color="secondary" >Scarfs</ion-option>\n              </ion-select>\n          </ion-item>\n\n          <ion-item>\n              <ion-label >Price</ion-label>\n              <ion-input floating type="number" ></ion-input>\n          </ion-item>\n\n          <ion-item class="option">\n              <ion-label>InStock</ion-label>\n              <ion-toggle checked="true" ></ion-toggle>\n          </ion-item>\n\n\n          <ion-item>\n              <ion-label >Description</ion-label>\n              <ion-textarea rows="4" floating type="text" ></ion-textarea>\n          </ion-item>\n\n          <ion-item>\n              <ion-thumbnail>\n                <img >\n              </ion-thumbnail>\n              <input type="file" name="Choose File" (click)="uplodFile()">\n          </ion-item>\n        </ion-list>\n    </form>\n  </div>\n\n  <div>\n    <button ion-button full color="primery" (click)="login()">save</button>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\new-item\new-item.html"*/,
+        selector: 'page-new-item',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/new-item/new-item.html"*/'\n<ion-header >\n  <ion-navbar >\n    <ion-title >New Kessa</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding-vertical >\n  <div padding>\n    <form >\n        <ion-list>\n          <ion-item>\n              <ion-label>Name:</ion-label>\n              <ion-input floating type="text" placeholder="Product Name" #name > </ion-input>\n          </ion-item>\n\n          <ion-item >\n              <ion-label>category</ion-label>\n              <ion-select >\n              <ion-option color="secondary" >All black Kessa</ion-option>\n              <ion-option color="secondary" >Daily Kessa</ion-option>\n              <ion-option color="secondary" >Night Kessa</ion-option>\n              <ion-option color="secondary" >Scarfs</ion-option>\n              </ion-select>\n          </ion-item>\n\n          <ion-item>\n              <ion-label >Price</ion-label>\n              <ion-input floating type="number" placeholder="150"></ion-input>\n          </ion-item>\n\n          <ion-item class="option">\n              <ion-label>InStock</ion-label>\n              <ion-toggle checked="true" ></ion-toggle>\n          </ion-item>\n\n\n          <ion-item>\n              <ion-label >Description</ion-label>\n              <ion-textarea rows="4" floating type="text" placeholder="text text"></ion-textarea>\n          </ion-item>\n\n          <ion-item>\n              <ion-thumbnail>\n                <img >\n              </ion-thumbnail>\n              <input type="file" name="Choose File" (click)="uplodFile()">\n          </ion-item>\n        </ion-list>\n    </form>\n  </div>\n\n  <div>\n    <button ion-button full color="primery" (click)="login()">save</button>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/new-item/new-item.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
 ], NewItemPage);
@@ -1418,110 +1295,10 @@ KessaDetailsPage = __decorate([
 
 /***/ }),
 
-<<<<<<< HEAD
-/***/ 286:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BoutiqueInfoPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__d_tabs_d_tabs__ = __webpack_require__(50);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the BoutiqueInfoPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
-var BoutiqueInfoPage = (function () {
-    function BoutiqueInfoPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    BoutiqueInfoPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad BoutiqueInfoPage');
-    };
-    BoutiqueInfoPage.prototype.RejesterBoutiqe = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__d_tabs_d_tabs__["a" /* DTabsPage */]);
-    };
-    return BoutiqueInfoPage;
-}());
-BoutiqueInfoPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-boutique-info',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/boutique-info/boutique-info.html"*/'<ion-header>\n  <ion-navbar >\n    <ion-title >Boutique Info</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content >\n\n  <ion-list id="info">\n      <ion-item >\n          <ion-label id="item" >Boutique name:</ion-label>\n          <ion-label #name >AbayaBoutique</ion-label>\n      </ion-item>\n\n      <ion-item>\n          <ion-label >Instagram account:</ion-label>\n          <ion-input floating type="text" placeholder="@*****" #instagram ></ion-input>\n      </ion-item>\n  </ion-list>\n\n  <ion-list > \n      <ion-list-header >The boutiqe ships to:</ion-list-header>\n      <ion-item >\n          <ion-label>Saudi Arabia</ion-label>\n          <ion-checkbox color="secondary" checked="true"></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Bahrain</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Kuwait</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Oman</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Qatar</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>UAE</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n  </ion-list>\n\n  <ion-list >\n      <ion-list-header >online payment information</ion-list-header>\n      <ion-item>\n          <ion-label >Card number:</ion-label>\n          <ion-input floating type="text" placeholder="" #CNum ></ion-input>\n      </ion-item>\n\n      <ion-item >\n          <ion-label >Name on the card:</ion-label>\n          <ion-input floating type="text" placeholder="Ghada Bin Farhan" #CName></ion-input>\n      </ion-item > \n\n      <ion-item >\n          <ion-label >Bank</ion-label>\n          <ion-input floating type="text" placeholder="Bank Name" #CName></ion-input>\n      </ion-item >\n\n      <ion-item > \n        <ion-label >Country:</ion-label>\n        <ion-select [(ngModel)]="Country">\n          <ion-option value="SA">Saudi Arabia</ion-option>\n          <ion-option value="BH">Bahrain</ion-option>\n          <ion-option value="KW">Kuwait</ion-option>\n          <ion-option value="OM">Oman</ion-option>\n          <ion-option value="QA">Qatar</ion-option>\n          <ion-option value="AE">UAE</ion-option>\n        </ion-select>\n      </ion-item >\n\n  </ion-list>\n\n\n\n\n  <button ion-button full color="primery" (click)="RejesterBoutiqe()"> Rejester Boutiqe</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/boutique-info/boutique-info.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-], BoutiqueInfoPage);
-
-//# sourceMappingURL=boutique-info.js.map
-
-/***/ }),
-
-=======
->>>>>>> b3e63c847b22093ce849ca0ce9977d87c37411ee
 /***/ 50:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-<<<<<<< HEAD
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DTabsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__collection_collection__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__d_orders_d_orders__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__new_item_new_item__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__d_profile_d_profile__ = __webpack_require__(211);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-;
-
-
-
-var DTabsPage = (function () {
-    function DTabsPage() {
-        this.tab1Root = __WEBPACK_IMPORTED_MODULE_1__collection_collection__["a" /* CollectionPage */];
-        this.tab2Root = __WEBPACK_IMPORTED_MODULE_2__d_orders_d_orders__["a" /* DOrdersPage */];
-        this.tab3Root = __WEBPACK_IMPORTED_MODULE_3__new_item_new_item__["a" /* NewItemPage */];
-        this.tab4Root = __WEBPACK_IMPORTED_MODULE_4__d_profile_d_profile__["a" /* DProfilePage */];
-    }
-    return DTabsPage;
-}());
-DTabsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/d-tabs/d-tabs.html"*/'<ion-tabs cless="tabs" [color]=" \'danger\' ">\n  <ion-tab cless="tabs" [root]="tab1Root" tabTitle="Collection" tabIcon="md-albums"></ion-tab>\n  <ion-tab cless="tabs" [root]="tab2Root" tabTitle="Orders" tabIcon="md-copy"></ion-tab>\n  <ion-tab cless="tabs" [root]="tab3Root" tabTitle="New Kessa" tabIcon="md-add"></ion-tab>\n  <ion-tab cless="tabs" [root]="tab4Root" tabTitle="Profile" tabIcon="ios-contact-outline"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/d-tabs/d-tabs.html"*/,
-    }),
-    __metadata("design:paramtypes", [])
-], DTabsPage);
-
-//# sourceMappingURL=d-tabs.js.map
-
-/***/ }),
-
-/***/ 51:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-=======
->>>>>>> b3e63c847b22093ce849ca0ce9977d87c37411ee
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__new_arrivals_new_arrivals__ = __webpack_require__(106);

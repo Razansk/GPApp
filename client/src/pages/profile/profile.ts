@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { COrdersPage } from '../c-orders/c-orders';
-// import { CardsPage } from '../cards/cards';
+import { CardsPage } from '../cards/cards';
 
 @Component({
   selector: 'page-profile',
@@ -21,8 +21,8 @@ export class ProfilePage {
 
 
 
-  // Cards(){
-  //   this.navCtrl.push(CardsPage);
-  // }
+  Cards(){
+    this.navCtrl.push(CardsPage);
+  }
 
 }
