@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, LoadingController} from 'ionic-angular';
 import { AuthProvider } from '../../providers/auth/auth';
 import { Http, Headers } from "@angular/http";
-import { DTabsPage } from '../d-tabs/d-tabs';
 import { TabsPage } from '../tabs/tabs';
+import {BoutiqueInfoPage} from '../boutique-info/boutique-info'
 
 
 
@@ -39,7 +39,7 @@ registerDesigner(){
  
     this.authService.createAccount(details).then((result) => {
       this.loading.dismiss();
-      this.navCtrl.setRoot(DTabsPage);
+      this.navCtrl.setRoot(BoutiqueInfoPage);
               
       console.log(result);
     },
