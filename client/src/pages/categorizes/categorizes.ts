@@ -15,5 +15,8 @@ export class CategorizesPage {
   getProducts(){
      this.navCtrl.setRoot(NewArrivalsPage);
   }
+  show(){
+    
+  }
 
 }
