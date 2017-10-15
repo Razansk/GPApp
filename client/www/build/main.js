@@ -7,7 +7,7 @@ webpackJsonp([0],{
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sign_up_sign_up__ = __webpack_require__(106);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -224,7 +224,53 @@ SignUpPage = __decorate([
 
 /***/ }),
 
-/***/ 114:
+/***/ 107:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewArrivalsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_products_products__ = __webpack_require__(205);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var NewArrivalsPage = (function () {
+    function NewArrivalsPage(navCtrl, productService) {
+        this.navCtrl = navCtrl;
+        this.productService = productService;
+    }
+    NewArrivalsPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.productService.loopProducts().then(function (data) {
+            _this.products = data;
+        });
+    };
+    NewArrivalsPage.prototype.addToCart = function () {
+    };
+    return NewArrivalsPage;
+}());
+NewArrivalsPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-new-arrivals',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\new-arrivals\new-arrivals.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="toolbar">\n      New Arrivals\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding-vertical >\n   <div  class="prod">         \n         <div >\n            <div class="card-background-page grid" >\n\n               <ion-row *ngFor="let products of ProductsProvider.data" class="row unlimited-items">\n                  <ion-col class="col" >\n                     <ion-card>\n                       <!--item img-->\n                        <ion-card-content style="padding: 0px" class="stock">\n                           <a (click)="getProductDetails()">\n                              <img src="../assets/img/logo.png">\n                           </a>\n                        </ion-card-content>\n                        <!--item name-->\n                        <ion-label  style="font-weight:500; margin:8px 8px 0px;" color="deep"><strong>Item Name</strong></ion-label>\n          \n                        <ion-item no-padding class="price-list">\n                            <!--item price-->\n                            <h3 style="margin-top: 0px; text-align: left" color="secondary" >20</h3>\n                            <!--adding item-->\n                           <button ion-button icon-only style="margin: 0px" item-right clear color="primery"  (click)="addToCart()">\n                           <ion-icon ios="ios-add-circle-outline" md="ios-add-circle-outline"></ion-icon>\n                           </button>  \n                        </ion-item>\n                     </ion-card>\n                  </ion-col>\n\n                  <!-- second item -->\n                    <ion-col class="col" >\n                     <ion-card>\n                       <!--item img-->\n                        <ion-card-content style="padding: 0px" class="stock">\n                           <a (click)="getProductDetails()">\n                              <img src="../assets/img/logo.png">\n                           </a>\n                        </ion-card-content>\n                        <!--item name-->\n                        <ion-label style="font-weight:500; margin:8px 8px 0px;" color="deep"><strong>Item Name</strong></ion-label>\n          \n                        <ion-item no-padding class="price-list">\n                            <!--item price-->\n                            <h3 style="margin-top: 0px; text-align: left" color="secondary" >20</h3>\n                            <!--adding item-->\n                           <button ion-button icon-only style="margin: 0px" item-right clear color="primery"  (click)="addToCart()">\n                           <ion-icon ios="ios-add-circle-outline" md="ios-add-circle-outline"></ion-icon>\n                           </button>  \n                        </ion-item>\n                     </ion-card>\n                  </ion-col>\n            \n               </ion-row>\n               <!--end of row-->\n            </div>\n         </div>\n         <!-- end of drid view -->   \n\n   </div>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\new-arrivals\new-arrivals.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_products_products__["a" /* ProductsProvider */]])
+], NewArrivalsPage);
+
+//# sourceMappingURL=new-arrivals.js.map
+
+/***/ }),
+
+/***/ 115:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -233,11 +279,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 114;
+webpackEmptyAsyncContext.id = 115;
 
 /***/ }),
 
-/***/ 156:
+/***/ 157:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -246,11 +292,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 156;
+webpackEmptyAsyncContext.id = 157;
 
 /***/ }),
 
-/***/ 200:
+/***/ 201:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -344,7 +390,7 @@ LoginPage = __decorate([
 
 /***/ }),
 
-/***/ 201:
+/***/ 202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -383,7 +429,7 @@ CollectionPage = __decorate([
 
 /***/ }),
 
-/***/ 202:
+/***/ 203:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -422,7 +468,7 @@ DOrdersPage = __decorate([
 
 /***/ }),
 
-/***/ 203:
+/***/ 204:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -469,53 +515,6 @@ NewItemPage = __decorate([
 
 /***/ }),
 
-/***/ 204:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewArrivalsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_products_products__ = __webpack_require__(205);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var NewArrivalsPage = (function () {
-    function NewArrivalsPage(navCtrl, productService) {
-        this.navCtrl = navCtrl;
-        this.productService = productService;
-    }
-    NewArrivalsPage.prototype.ionViewDidLoad = function () {
-        var _this = this;
-        this.productService.loopProducts().then(function (data) {
-            _this.products = data;
-        });
-    };
-    NewArrivalsPage.prototype.addToCart = function () {
-    };
-    return NewArrivalsPage;
-}());
-NewArrivalsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-new-arrivals',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\new-arrivals\new-arrivals.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="toolbar">\n      New Arrivals\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding-vertical >\n   <div  class="prod">         \n         <div >\n            <div class="card-background-page grid" >\n\n               <ion-row *ngFor="let products of ProductsProvider.data" class="row unlimited-items">\n                  <ion-col class="col" >\n                     <ion-card>\n                       <!--item img-->\n                        <ion-card-content style="padding: 0px" class="stock">\n                           <a (click)="getProductDetails()">\n                              <img src="../assets/img/logo.png">\n                           </a>\n                        </ion-card-content>\n                        <!--item name-->\n                        <ion-label  style="font-weight:500; margin:8px 8px 0px;" color="deep"><strong>Item Name</strong></ion-label>\n          \n                        <ion-item no-padding class="price-list">\n                            <!--item price-->\n                            <h3 style="margin-top: 0px; text-align: left" color="secondary" >20</h3>\n                            <!--adding item-->\n                           <button ion-button icon-only style="margin: 0px" item-right clear color="primery"  (click)="addToCart()">\n                           <ion-icon ios="ios-add-circle-outline" md="ios-add-circle-outline"></ion-icon>\n                           </button>  \n                        </ion-item>\n                     </ion-card>\n                  </ion-col>\n\n                  <!-- second item -->\n                    <ion-col class="col" >\n                     <ion-card>\n                       <!--item img-->\n                        <ion-card-content style="padding: 0px" class="stock">\n                           <a (click)="getProductDetails()">\n                              <img src="../assets/img/logo.png">\n                           </a>\n                        </ion-card-content>\n                        <!--item name-->\n                        <ion-label style="font-weight:500; margin:8px 8px 0px;" color="deep"><strong>Item Name</strong></ion-label>\n          \n                        <ion-item no-padding class="price-list">\n                            <!--item price-->\n                            <h3 style="margin-top: 0px; text-align: left" color="secondary" >20</h3>\n                            <!--adding item-->\n                           <button ion-button icon-only style="margin: 0px" item-right clear color="primery"  (click)="addToCart()">\n                           <ion-icon ios="ios-add-circle-outline" md="ios-add-circle-outline"></ion-icon>\n                           </button>  \n                        </ion-item>\n                     </ion-card>\n                  </ion-col>\n            \n               </ion-row>\n               <!--end of row-->\n            </div>\n         </div>\n         <!-- end of drid view -->   \n\n   </div>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\new-arrivals\new-arrivals.html"*/
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__providers_products_products__["a" /* ProductsProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_products_products__["a" /* ProductsProvider */]) === "function" && _b || Object])
-], NewArrivalsPage);
-
-var _a, _b;
-//# sourceMappingURL=new-arrivals.js.map
-
-/***/ }),
-
 /***/ 205:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -558,10 +557,9 @@ var ProductsProvider = (function () {
 }());
 ProductsProvider = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]])
 ], ProductsProvider);
 
-var _a;
 //# sourceMappingURL=products.js.map
 
 /***/ }),
@@ -659,7 +657,7 @@ COrdersPage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CategorizesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__new_arrivals_new_arrivals__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__new_arrivals_new_arrivals__ = __webpack_require__(107);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -683,12 +681,11 @@ var CategorizesPage = (function () {
 }());
 CategorizesPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-categorizes',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\categorizes\categorizes.html"*/'<ion-header>\n  <ion-navbar >\n    <ion-title class="toolbar">Categories</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n\n<ion-content class="card-background-page" padding-vertical>\n  \n   \n <div>\n   <ion-card>\n    <img src="../assets/img/logo.png"/>   \n    <button ion-button [(ngModel)]="role"  full color="secondary" (click)="getProducts()" ngDefaultControl> All Black Kessa</button>\n  </ion-card>\n\n   <ion-card>\n    <img src="../assets/img/logo.png"/>   \n    <button ion-button [(ngModel)]="role"  full color="secondary" (click)="getProducts()" ngDefaultControl> Night Kessa</button>\n  </ion-card>\n\n   <ion-card>\n    <img src="../assets/img/logo.png"/>   \n    <button ion-button [(ngModel)]="role"  full color="secondary" (click)="getProducts()" ngDefaultControl> Daily Kessa</button>\n  </ion-card>\n\n   <ion-card>\n    <img src="../assets/img/logo.png"/>   \n    <button ion-button [(ngModel)]="role"  full color="secondary" (click)="getProducts()" ngDefaultControl> Scarves</button>\n  </ion-card>\n\n </div>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\categorizes\categorizes.html"*/
+        selector: 'page-categorizes',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\categorizes\categorizes.html"*/'<ion-header>\n  <ion-navbar >\n    <ion-title class="toolbar">Catagorizes</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content  class="card-background-page" no-padding no-margin>\n  <ion-card>\n    <img src="../assets/img/logo.png"/>\n    <div class="card-title">All Black Kesssa</div>\n  </ion-card>\n\n  <ion-card>\n    <img src="../assets/img/logo.png"/>\n    <div class="card-title">Night Kesssa</div>\n  </ion-card>\n\n  <ion-card>\n    <img src="../assets/img/logo.png"/>\n    <div class="card-title">Daily Kesssa</div>\n  </ion-card>\n\n  <ion-card>\n    <img src="../assets/img/logo.png"/>\n    <div class="card-title">Scarfs</div>\n  </ion-card>\n\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\categorizes\categorizes.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
 ], CategorizesPage);
 
-var _a;
 //# sourceMappingURL=categorizes.js.map
 
 /***/ }),
@@ -908,13 +905,13 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(272);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_new_arrivals_new_arrivals__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_new_arrivals_new_arrivals__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_profile_profile__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_categorizes_categorizes__ = __webpack_require__(208);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_cart_cart__ = __webpack_require__(209);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_home_home__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_login_login__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_login_login__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_sign_up_sign_up__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_c_orders_c_orders__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_cards_cards__ = __webpack_require__(284);
@@ -922,13 +919,13 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_kessa_details_kessa_details__ = __webpack_require__(285);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_d_tabs_d_tabs__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_boutique_info_boutique_info__ = __webpack_require__(286);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_collection_collection__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_d_orders_d_orders__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_new_item_new_item__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_collection_collection__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_d_orders_d_orders__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_new_item_new_item__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_d_profile_d_profile__ = __webpack_require__(211);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_storage__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_status_bar__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_splash_screen__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_status_bar__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_splash_screen__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_cart_cart__ = __webpack_require__(212);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__providers_auth_auth__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_products_products__ = __webpack_require__(205);
@@ -1047,8 +1044,8 @@ AppModule = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(102);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1253,9 +1250,9 @@ BoutiqueInfoPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DTabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__collection_collection__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__d_orders_d_orders__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__new_item_new_item__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__collection_collection__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__d_orders_d_orders__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__new_item_new_item__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__d_profile_d_profile__ = __webpack_require__(211);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1297,7 +1294,7 @@ DTabsPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__new_arrivals_new_arrivals__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__new_arrivals_new_arrivals__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__profile_profile__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__categorizes_categorizes__ = __webpack_require__(208);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__cart_cart__ = __webpack_require__(209);
