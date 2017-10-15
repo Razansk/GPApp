@@ -7,7 +7,7 @@ webpackJsonp([0],{
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sign_up_sign_up__ = __webpack_require__(105);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -36,7 +36,7 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/home/home.html"*/'\n\n<ion-content  padding-vertical>\n  <img  src="../assets/img/kessa.png" >\n  <button ion-button full color="secondary" (click)="openLoginPage()"> Login</button>\n  <button ion-button full color="secondary" (click)="openSignupPage()"> Sign up</button>\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\home\home.html"*/'\n\n<ion-content  padding-vertical>\n  <img  src="../assets/img/kessa.png" >\n  <button ion-button full color="secondary" (click)="openLoginPage()"> Login</button>\n  <button ion-button full color="secondary" (click)="openSignupPage()"> Sign up</button>\n</ion-content>\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\home\home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
 ], HomePage);
@@ -146,7 +146,7 @@ AuthProvider = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tabs_tabs__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__boutique_info_boutique_info__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__boutique_info_boutique_info__ = __webpack_require__(209);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -213,7 +213,7 @@ var SignUpPage = (function () {
 }());
 SignUpPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-sign-up',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/sign-up/sign-up.html"*/'<!--\n  Generated template for the SignUpPage page.\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title class="toolbar">Sign Up</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content  padding-vertical>\n  \n  <ion-list >\n      <ion-item >\n          <ion-label>Name:</ion-label>\n          <ion-input [(ngModel)]="name"floating type="text" placeholder="Ghada Abdulaziz" ngDefaultControl > </ion-input>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Email:</ion-label>\n          <ion-input [(ngModel)]="email" floating type="email" placeholder="******@*****.com" ngDefaultControl ></ion-input>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Phone:</ion-label>\n          <ion-input [(ngModel)]="phone" floating type="phone" placeholder="+96655*******" ngDefaultControl>Phone:</ion-input>\n      </ion-item>\n\n      <ion-item >\n          <ion-label>Password:</ion-label>\n          <ion-input [(ngModel)]="password" floating type="password" placeholder="Password" ngDefaultControl></ion-input>\n      </ion-item >\n  </ion-list>\n  \n  <br />\n \n <div>\n     <button ion-button [(ngModel)]="role" value="2" full color="secondary" (click)="registerDesigner()" ngDefaultControl> Designer</button> \n     <p>or</p>\n     <button ion-button [(ngModel)]="role" value="1" full color="secondary" (click)="registerCustomer()" ngDefaultControl > Customer</button>\n  </div>\n\n\n</ion-content>'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/sign-up/sign-up.html"*/,
+        selector: 'page-sign-up',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\sign-up\sign-up.html"*/'<!--\n\n  Generated template for the SignUpPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title class="toolbar">Sign Up</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content  padding-vertical>\n\n  \n\n  <ion-list >\n\n      <ion-item >\n\n          <ion-label>Name:</ion-label>\n\n          <ion-input [(ngModel)]="name"floating type="text" placeholder="Ghada Abdulaziz" ngDefaultControl > </ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n          <ion-label>Email:</ion-label>\n\n          <ion-input [(ngModel)]="email" floating type="email" placeholder="******@*****.com" ngDefaultControl ></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n          <ion-label>Phone:</ion-label>\n\n          <ion-input [(ngModel)]="phone" floating type="phone" placeholder="+96655*******" ngDefaultControl>Phone:</ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item >\n\n          <ion-label>Password:</ion-label>\n\n          <ion-input [(ngModel)]="password" floating type="password" placeholder="Password" ngDefaultControl></ion-input>\n\n      </ion-item >\n\n  </ion-list>\n\n  \n\n  <br />\n\n \n\n <div>\n\n     <button ion-button [(ngModel)]="role" value="2" full color="secondary" (click)="registerDesigner()" ngDefaultControl> Designer</button> \n\n     <p>or</p>\n\n     <button ion-button [(ngModel)]="role" value="1" full color="secondary" (click)="registerCustomer()" ngDefaultControl > Customer</button>\n\n  </div>\n\n\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\sign-up\sign-up.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__["a" /* AuthProvider */],
@@ -231,7 +231,8 @@ SignUpPage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewArrivalsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_products_products__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_products_products__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cart_cart__ = __webpack_require__(107);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -244,28 +245,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var NewArrivalsPage = (function () {
+
+var NewArrivalsPage = NewArrivalsPage_1 = (function () {
     function NewArrivalsPage(navCtrl, productService) {
         this.navCtrl = navCtrl;
         this.productService = productService;
     }
     NewArrivalsPage.prototype.ionViewDidLoad = function () {
-        var _this = this;
-        this.productService.loopProducts().then(function (data) {
-            _this.products = data;
-        });
+        this.navCtrl.setRoot(NewArrivalsPage_1);
     };
+    ;
     NewArrivalsPage.prototype.addToCart = function () {
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__cart_cart__["a" /* CartPage */]);
     };
     return NewArrivalsPage;
 }());
-NewArrivalsPage = __decorate([
+NewArrivalsPage = NewArrivalsPage_1 = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-new-arrivals',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/new-arrivals/new-arrivals.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="toolbar">\n      New Arrivals\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding-vertical >\n   <div  class="prod">         \n         <div >\n            <div class="card-background-page grid" >\n\n               <ion-row *ngFor="let products of ProductsProvider.data" class="row unlimited-items">\n                  <ion-col class="col" >\n                     <ion-card>\n                       <!--item img-->\n                        <ion-card-content style="padding: 0px" class="stock">\n                           <a (click)="getProductDetails()">\n                              <img src="../assets/img/logo.png">\n                           </a>\n                        </ion-card-content>\n                        <!--item name-->\n                        <ion-label  style="font-weight:500; margin:8px 8px 0px;" color="deep"><strong>Item Name</strong></ion-label>\n          \n                        <ion-item no-padding class="price-list">\n                            <!--item price-->\n                            <h3 style="margin-top: 0px; text-align: left" color="secondary" >20</h3>\n                            <!--adding item-->\n                           <button ion-button icon-only style="margin: 0px" item-right clear color="primery"  (click)="addToCart()">\n                           <ion-icon ios="ios-add-circle-outline" md="ios-add-circle-outline"></ion-icon>\n                           </button>  \n                        </ion-item>\n                     </ion-card>\n                  </ion-col>\n\n                  <!-- second item -->\n                    <ion-col class="col" >\n                     <ion-card>\n                       <!--item img-->\n                        <ion-card-content style="padding: 0px" class="stock">\n                           <a (click)="getProductDetails()">\n                              <img src="../assets/img/logo.png">\n                           </a>\n                        </ion-card-content>\n                        <!--item name-->\n                        <ion-label style="font-weight:500; margin:8px 8px 0px;" color="deep"><strong>Item Name</strong></ion-label>\n          \n                        <ion-item no-padding class="price-list">\n                            <!--item price-->\n                            <h3 style="margin-top: 0px; text-align: left" color="secondary" >20</h3>\n                            <!--adding item-->\n                           <button ion-button icon-only style="margin: 0px" item-right clear color="primery"  (click)="addToCart()">\n                           <ion-icon ios="ios-add-circle-outline" md="ios-add-circle-outline"></ion-icon>\n                           </button>  \n                        </ion-item>\n                     </ion-card>\n                  </ion-col>\n            \n               </ion-row>\n               <!--end of row-->\n            </div>\n         </div>\n         <!-- end of drid view -->   \n\n   </div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/new-arrivals/new-arrivals.html"*/
+        selector: 'page-new-arrivals',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\new-arrivals\new-arrivals.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="toolbar">\n      New Arrivals\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding-vertical >\n   <div  class="prod">         \n         <div >\n            <div class="card-background-page grid" >\n\n               <ion-row class="row unlimited-items">\n                  <ion-col class="col" >\n                     <ion-card>\n                       <!--item img-->\n                        <ion-card-content style="padding: 0px" class="stock">\n                           <a (click)="getProductDetails()">\n                              <img src="../assets/img/logo.png">\n                           </a>\n                        </ion-card-content>\n                        <!--item name-->\n                        <ion-label  style="font-weight:500; margin:8px 8px 0px;" color="deep"><strong>Item Name</strong></ion-label>\n          \n                        <ion-item no-padding class="price-list">\n                            <!--item price-->\n                            <h3 style="margin-top: 0px; text-align: left" color="secondary" >20</h3>\n                            <!--adding item-->\n                           <button ion-button icon-only style="margin: 0px" item-right clear color="primery"  (click)="addToCart()">\n                           <ion-icon ios="ios-add-circle-outline" md="ios-add-circle-outline"></ion-icon>\n                           </button>  \n                        </ion-item>\n                     </ion-card>\n                  </ion-col>\n\n                  <!-- second item -->\n                    <ion-col class="col" >\n                     <ion-card>\n                       <!--item img-->\n                        <ion-card-content style="padding: 0px" class="stock">\n                           <a (click)="getProductDetails()">\n                              <img src="../assets/img/logo.png">\n                           </a>\n                        </ion-card-content>\n                        <!--item name-->\n                        <ion-label style="font-weight:500; margin:8px 8px 0px;" color="deep"><strong>Item Name</strong></ion-label>\n          \n                        <ion-item no-padding class="price-list">\n                            <!--item price-->\n                            <h3 style="margin-top: 0px; text-align: left" color="secondary" >20</h3>\n                            <!--adding item-->\n                           <button ion-button icon-only style="margin: 0px" item-right clear color="primery"  (click)="addToCart()">\n                           <ion-icon ios="ios-add-circle-outline" md="ios-add-circle-outline"></ion-icon>\n                           </button>  \n                        </ion-item>\n                     </ion-card>\n                  </ion-col>\n            \n               </ion-row>\n               <!--end of row-->\n            </div>\n         </div>\n         <!-- end of drid view -->   \n\n   </div>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\new-arrivals\new-arrivals.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_products_products__["a" /* ProductsProvider */]])
 ], NewArrivalsPage);
 
+var NewArrivalsPage_1;
 //# sourceMappingURL=new-arrivals.js.map
 
 /***/ }),
@@ -274,12 +276,57 @@ NewArrivalsPage = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CartPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__payment_payment__ = __webpack_require__(204);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var CartPage = (function () {
+    function CartPage(navCtrl, navParams) {
+        // this.payments = [];
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    CartPage.prototype.placeOrder = function () {
+        // if user choose cash on delivery >
+        // this.navCtrl.push(TabsPage);
+        // if user choose onlie payment 
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__payment_payment__["a" /* PaymentPage */]);
+    };
+    return CartPage;
+}());
+CartPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-cart',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\cart\cart.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="toolbar"> Cart</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding-vertical>\n    <div >\n   \n      <ion-list style="margin-left:5px; margin-right:5px;">\n        <!-- one item -->\n          <ion-item >\n            <ion-thumbnail item-left>\n                <img src="./assets/img/abaya1.jpg">\n            </ion-thumbnail>\n\n            <h3 wrap-text style="font-size:15.5px;">Abaya Name</h3>\n            <h4 wrap-text >Price: <span>88</span></h4>\n            <button ion-button icon-only class="has-icon icon-only" no-margin item-right clear color="primery" (click)="deleteFromCart()">\n                <ion-icon ios="ios-remove-circle-outline" md="ios-remove-circle-outline"></ion-icon>\n            </button>\n          </ion-item>\n\n          <br>\n          <!--total-->\n          <ion-row class="label">\n            <ion-col width-75>\n                <ion-label no-margin><b>Totals</b></ion-label>\n            </ion-col>\n            <ion-col width-25 text-right>\n                <ion-label no-margin><b>99</b></ion-label>\n            </ion-col>\n          </ion-row>\n        </ion-list>\n\n        <!--Payment Options-->\n        <div>\n          <ion-list style="margin:0px" text-wrap radio-group >\n          <ion-list-header >Payment</ion-list-header>\n          <ion-item>\n            <ion-label >Online Payment</ion-label>\n            <ion-radio color="secondary" value="stripe"></ion-radio>\n          </ion-item>\n          <ion-item>\n            <ion-label >Cash On Delivery</ion-label>\n            <ion-radio color="secondary" checked="true" value="cod"></ion-radio>\n          </ion-item>\n          </ion-list>\n        </div>\n    </div>\n\n    <div>\n      <button ion-button full color="secondary" (click)="placeOrder()">Buy</button>\n    </div>\n</ion-content>\n\n\n\n        '/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\cart\cart.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+], CartPage);
+
+//# sourceMappingURL=cart.js.map
+
+/***/ }),
+
+/***/ 108:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DTabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__collection_collection__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__d_orders_d_orders__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__new_item_new_item__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__d_profile_d_profile__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__collection_collection__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__d_orders_d_orders__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__new_item_new_item__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__d_profile_d_profile__ = __webpack_require__(213);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -305,7 +352,7 @@ var DTabsPage = (function () {
     return DTabsPage;
 }());
 DTabsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/d-tabs/d-tabs.html"*/'<ion-tabs cless="tabs" [color]=" \'danger\' ">\n  <ion-tab cless="tabs" [root]="tab1Root" tabTitle="Collection" tabIcon="md-albums"></ion-tab>\n  <ion-tab cless="tabs" [root]="tab2Root" tabTitle="Orders" tabIcon="md-copy"></ion-tab>\n  <ion-tab cless="tabs" [root]="tab3Root" tabTitle="New Kessa" tabIcon="md-add"></ion-tab>\n  <ion-tab cless="tabs" [root]="tab4Root" tabTitle="Profile" tabIcon="ios-contact-outline"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/d-tabs/d-tabs.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\d-tabs\d-tabs.html"*/'<ion-tabs cless="tabs" [color]=" \'danger\' ">\n  <ion-tab cless="tabs" [root]="tab1Root" tabTitle="Collection" tabIcon="md-albums"></ion-tab>\n  <ion-tab cless="tabs" [root]="tab2Root" tabTitle="Orders" tabIcon="md-copy"></ion-tab>\n  <ion-tab cless="tabs" [root]="tab3Root" tabTitle="New Kessa" tabIcon="md-add"></ion-tab>\n  <ion-tab cless="tabs" [root]="tab4Root" tabTitle="Profile" tabIcon="ios-contact-outline"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\d-tabs\d-tabs.html"*/,
     }),
     __metadata("design:paramtypes", [])
 ], DTabsPage);
@@ -314,7 +361,7 @@ DTabsPage = __decorate([
 
 /***/ }),
 
-/***/ 115:
+/***/ 116:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -323,11 +370,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 115;
+webpackEmptyAsyncContext.id = 116;
 
 /***/ }),
 
-/***/ 157:
+/***/ 158:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -336,11 +383,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 157;
+webpackEmptyAsyncContext.id = 158;
 
 /***/ }),
 
-/***/ 201:
+/***/ 202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -350,7 +397,7 @@ webpackEmptyAsyncContext.id = 157;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sign_up_sign_up__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__d_tabs_d_tabs__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__d_tabs_d_tabs__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tabs_tabs__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -422,7 +469,7 @@ var LoginPage = (function () {
 }());
 LoginPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-login',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/login/login.html"*/'\n<ion-header>\n\n  <ion-navbar >\n    <ion-title class="toolbar">login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding-vertical >\n\n  <ion-list >\n      <ion-item >\n          <ion-label>Name:</ion-label>\n          <ion-input floating type="text" placeholder="Ghada Abdulaziz" #name > </ion-input>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Email:</ion-label>\n          <ion-input floating type="email" placeholder="******@*****.com" #email ></ion-input>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Phone:</ion-label>\n          <ion-input floating type="phone" placeholder="+96655*******" #phone >Phone:</ion-input>\n      </ion-item>\n\n      <ion-item >\n          <ion-label>Password:</ion-label>\n          <ion-input floating type="password" placeholder="Password" #password></ion-input>\n      </ion-item >\n  </ion-list>\n  \n  <br />\n  <div>\n      <button ion-button full color="secondary" (click)="login()"> Login</button>\n  </div>\n\n</ion-content>'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/login/login.html"*/,
+        selector: 'page-login',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\login\login.html"*/'\n<ion-header>\n\n  <ion-navbar >\n    <ion-title class="toolbar">login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding-vertical >\n\n  <ion-list >\n      <ion-item >\n          <ion-label>Name:</ion-label>\n          <ion-input floating type="text" placeholder="Ghada Abdulaziz" #name > </ion-input>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Email:</ion-label>\n          <ion-input floating type="email" placeholder="******@*****.com" #email ></ion-input>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Phone:</ion-label>\n          <ion-input floating type="phone" placeholder="+96655*******" #phone >Phone:</ion-input>\n      </ion-item>\n\n      <ion-item >\n          <ion-label>Password:</ion-label>\n          <ion-input floating type="password" placeholder="Password" #password></ion-input>\n      </ion-item >\n  </ion-list>\n  \n  <br />\n  <div>\n      <button ion-button full color="secondary" (click)="login()"> Login</button>\n  </div>\n\n</ion-content>'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\login\login.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */],
@@ -434,7 +481,7 @@ LoginPage = __decorate([
 
 /***/ }),
 
-/***/ 202:
+/***/ 203:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -483,185 +530,7 @@ ProductsProvider = __decorate([
 
 /***/ }),
 
-/***/ 203:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfilePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__c_orders_c_orders__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cards_cards__ = __webpack_require__(285);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var ProfilePage = (function () {
-    function ProfilePage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    ProfilePage.prototype.Orders = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__c_orders_c_orders__["a" /* COrdersPage */]);
-    };
-    ProfilePage.prototype.Cards = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__cards_cards__["a" /* CardsPage */]);
-    };
-    return ProfilePage;
-}());
-ProfilePage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-profile',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/profile/profile.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="toolbar">\n      Profile\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list >\n      <ion-item >\n          <ion-label id="item">Name:</ion-label>\n          <ion-label #name >Ghada Abdulaziz</ion-label>\n      </ion-item>\n\n      <ion-item>\n          <ion-label id="item">Email:</ion-label>\n          <ion-label #email >******@*****.com</ion-label>\n      </ion-item>\n\n      <ion-item>\n          <ion-label id="item">Phone:</ion-label>\n          <ion-label #phone >+96655*******</ion-label>\n      </ion-item>\n\n      <ion-item >\n          <ion-label id="item">Password:</ion-label>\n          <ion-label #password>*******</ion-label>\n      </ion-item >\n\n      <ion-item > \n        <ion-label id="item">Country:</ion-label>\n        <ion-select [(ngModel)]="Country">\n          <ion-option value="SA">Saudi Arabia</ion-option>\n          <ion-option value="BH">Bahrain</ion-option>\n          <ion-option value="KW">Kuwait</ion-option>\n          <ion-option value="OM">Oman</ion-option>\n          <ion-option value="QA">Qatar</ion-option>\n          <ion-option value="AE">UAE</ion-option>\n        </ion-select>\n      </ion-item >\n\n  </ion-list>\n\n\n  <br />\n  <div>\n     <!--<button ion-button full color="secondary" (click)="Orders()">Previous Orders</button> -->\n     <button ion-button full color="secondary" (click)="Cards()"> Cards</button>\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/profile/profile.html"*/
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object])
-], ProfilePage);
-
-var _a;
-//# sourceMappingURL=profile.js.map
-
-/***/ }),
-
 /***/ 204:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return COrdersPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the COrdersPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
-var COrdersPage = (function () {
-    function COrdersPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    COrdersPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad COrdersPage');
-    };
-    return COrdersPage;
-}());
-COrdersPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-c-orders',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/c-orders/c-orders.html"*/'<!--\n  Generated template for the COrdersPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title class="toolbar">Orders</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/c-orders/c-orders.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-], COrdersPage);
-
-//# sourceMappingURL=c-orders.js.map
-
-/***/ }),
-
-/***/ 205:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CategorizesPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__new_arrivals_new_arrivals__ = __webpack_require__(106);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var CategorizesPage = (function () {
-    function CategorizesPage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    CategorizesPage.prototype.getProducts = function () {
-        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__new_arrivals_new_arrivals__["a" /* NewArrivalsPage */]);
-    };
-    CategorizesPage.prototype.show = function () {
-    };
-    return CategorizesPage;
-}());
-CategorizesPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-categorizes',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/categorizes/categorizes.html"*/'<ion-header>\n  <ion-navbar >\n    <ion-title class="toolbar">Catagorizes</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content  class="card-background-page" no-padding no-margin>\n  <ion-card (click)=show()>\n    <img src="../assets/img/abaya4.jpg"/>\n    <div class="card-title">All Black Kesssa</div>\n  </ion-card>\n\n  <ion-card>\n    <img src="../assets/img/abaya1.jpg"/>\n    <div class="card-title">Night Kesssa</div>\n  </ion-card>\n\n  <ion-card>\n    <img src="../assets/img/abaya2.jpg"/>\n    <div class="card-title">Daily Kesssa</div>\n  </ion-card>\n\n  <ion-card>\n    <img src="../assets/img/abaya3.jpg"/>\n    <div class="card-title">Scarfs</div>\n  </ion-card>\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/categorizes/categorizes.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
-], CategorizesPage);
-
-//# sourceMappingURL=categorizes.js.map
-
-/***/ }),
-
-/***/ 206:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CartPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__payment_payment__ = __webpack_require__(207);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var CartPage = (function () {
-    function CartPage(navCtrl, navParams) {
-        // this.payments = [];
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    CartPage.prototype.placeOrder = function () {
-        // if user choose cash on delivery >
-        // this.navCtrl.push(TabsPage);
-        // if user choose onlie payment 
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__payment_payment__["a" /* PaymentPage */]);
-    };
-    return CartPage;
-}());
-CartPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-cart',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/cart/cart.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="toolbar"> Cart</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding-vertical>\n    <div >\n   \n      <ion-list style="margin-left:5px; margin-right:5px;">\n        <!-- one item -->\n          <ion-item >\n            <ion-thumbnail item-left>\n                <img src="./assets/img/abaya1.jpg">\n            </ion-thumbnail>\n\n            <h3 wrap-text style="font-size:15.5px;">Abaya Name</h3>\n            <h4 wrap-text >Price: <span>88</span></h4>\n            <button ion-button icon-only class="has-icon icon-only" no-margin item-right clear color="primery" (click)="deleteFromCart()">\n                <ion-icon ios="ios-remove-circle-outline" md="ios-remove-circle-outline"></ion-icon>\n            </button>\n          </ion-item>\n\n          <br>\n          <!--total-->\n          <ion-row class="label">\n            <ion-col width-75>\n                <ion-label no-margin><b>Totals</b></ion-label>\n            </ion-col>\n            <ion-col width-25 text-right>\n                <ion-label no-margin><b>99</b></ion-label>\n            </ion-col>\n          </ion-row>\n        </ion-list>\n\n        <!--Payment Options-->\n        <div>\n          <ion-list style="margin:0px" text-wrap radio-group >\n          <ion-list-header >Payment</ion-list-header>\n          <ion-item>\n            <ion-label >Online Payment</ion-label>\n            <ion-radio color="secondary" value="stripe"></ion-radio>\n          </ion-item>\n          <ion-item>\n            <ion-label >Cash On Delivery</ion-label>\n            <ion-radio color="secondary" checked="true" value="cod"></ion-radio>\n          </ion-item>\n          </ion-list>\n        </div>\n    </div>\n\n    <div>\n      <button ion-button full color="secondary" (click)="placeOrder()">Buy</button>\n    </div>\n</ion-content>\n\n\n\n        '/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/cart/cart.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-], CartPage);
-
-//# sourceMappingURL=cart.js.map
-
-/***/ }),
-
-/***/ 207:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -697,7 +566,7 @@ var PaymentPage = (function () {
 }());
 PaymentPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-payment',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/payment/payment.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="toolbar"> Payment</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding-vertical>\n  <div style="padding: 50px 25px 15px 25px; ">\n      <ion-list-header>Make Payment</ion-list-header>\n      <form #f="ngForm">\n        <ion-list no-margin>\n          <ion-item>\n              <ion-label >Name on Card</ion-label>\n              <ion-input required type="text"  name="stripe_number" placeholder="Ghada Farhan"></ion-input>\n            </ion-item>\n            <ion-item>\n              <ion-label >Card Number</ion-label>\n              <ion-input required type="text"  name="stripe_number" placeholder="*********"></ion-input>\n            </ion-item>\n            <ion-item>\n              <ion-label >Expiry Month</ion-label>\n              <ion-input required type="text"  name="stripe_exp_mon" placeholder="03"></ion-input>\n            </ion-item>\n            <ion-item>\n              <ion-label >Expiry Year</ion-label>\n              <ion-input required type="text"  name="stripe_exp_year" placeholder="2017"></ion-input>\n            </ion-item>\n            <ion-item>\n              <ion-label >Card Code</ion-label>\n              <ion-input required type="text"  name="stripe_code" placeholder="***"></ion-input>\n            </ion-item>\n        </ion-list>\n      </form>\n      <br> \n  </div>\n  <button ion-button full color="secondary" (click)="RejesterBoutiqe()">Buy</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/payment/payment.html"*/,
+        selector: 'page-payment',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\payment\payment.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title class="toolbar"> Payment</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding-vertical>\n\n  <div style="padding: 50px 25px 15px 25px; ">\n\n      <ion-list-header>Make Payment</ion-list-header>\n\n      <form #f="ngForm">\n\n        <ion-list no-margin>\n\n          <ion-item>\n\n              <ion-label >Name on Card</ion-label>\n\n              <ion-input required type="text"  name="stripe_number" placeholder="Ghada Farhan"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n              <ion-label >Card Number</ion-label>\n\n              <ion-input required type="text"  name="stripe_number" placeholder="*********"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n              <ion-label >Expiry Month</ion-label>\n\n              <ion-input required type="text"  name="stripe_exp_mon" placeholder="03"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n              <ion-label >Expiry Year</ion-label>\n\n              <ion-input required type="text"  name="stripe_exp_year" placeholder="2017"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n              <ion-label >Card Code</ion-label>\n\n              <ion-input required type="text"  name="stripe_code" placeholder="***"></ion-input>\n\n            </ion-item>\n\n        </ion-list>\n\n      </form>\n\n      <br> \n\n  </div>\n\n  <button ion-button full color="secondary" (click)="RejesterBoutiqe()">Buy</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\payment\payment.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
 ], PaymentPage);
@@ -706,14 +575,192 @@ PaymentPage = __decorate([
 
 /***/ }),
 
+/***/ 205:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfilePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__c_orders_c_orders__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cards_cards__ = __webpack_require__(207);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var ProfilePage = (function () {
+    function ProfilePage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    ProfilePage.prototype.Orders = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__c_orders_c_orders__["a" /* COrdersPage */]);
+    };
+    ProfilePage.prototype.Cards = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__cards_cards__["a" /* CardsPage */]);
+    };
+    return ProfilePage;
+}());
+ProfilePage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-profile',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\profile\profile.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title class="toolbar">\n\n      Profile\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list >\n\n      <ion-item >\n\n          <ion-label id="item">Name:</ion-label>\n\n          <ion-label #name >Ghada Abdulaziz</ion-label>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n          <ion-label id="item">Email:</ion-label>\n\n          <ion-label #email >******@*****.com</ion-label>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n          <ion-label id="item">Phone:</ion-label>\n\n          <ion-label #phone >+96655*******</ion-label>\n\n      </ion-item>\n\n\n\n      <ion-item >\n\n          <ion-label id="item">Password:</ion-label>\n\n          <ion-label #password>*******</ion-label>\n\n      </ion-item >\n\n\n\n      <ion-item > \n\n        <ion-label id="item">Country:</ion-label>\n\n        <ion-select [(ngModel)]="Country">\n\n          <ion-option value="SA">Saudi Arabia</ion-option>\n\n          <ion-option value="BH">Bahrain</ion-option>\n\n          <ion-option value="KW">Kuwait</ion-option>\n\n          <ion-option value="OM">Oman</ion-option>\n\n          <ion-option value="QA">Qatar</ion-option>\n\n          <ion-option value="AE">UAE</ion-option>\n\n        </ion-select>\n\n      </ion-item >\n\n\n\n  </ion-list>\n\n\n\n\n\n  <br />\n\n  <div>\n\n     <!--<button ion-button full color="secondary" (click)="Orders()">Previous Orders</button> -->\n\n     <button ion-button full color="secondary" (click)="Cards()"> Cards</button>\n\n  </div>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\profile\profile.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+], ProfilePage);
+
+//# sourceMappingURL=profile.js.map
+
+/***/ }),
+
+/***/ 206:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return COrdersPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the COrdersPage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var COrdersPage = (function () {
+    function COrdersPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    COrdersPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad COrdersPage');
+    };
+    return COrdersPage;
+}());
+COrdersPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-c-orders',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\c-orders\c-orders.html"*/'<!--\n  Generated template for the COrdersPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title class="toolbar">Orders</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\c-orders\c-orders.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+], COrdersPage);
+
+//# sourceMappingURL=c-orders.js.map
+
+/***/ }),
+
+/***/ 207:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CardsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the CardsPage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var CardsPage = (function () {
+    function CardsPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    CardsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad CardsPage');
+    };
+    return CardsPage;
+}());
+CardsPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-cards',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\cards\cards.html"*/'<!--\n  Generated template for the CardsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-title class="toolbar">Cards</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content >\n <ion-list >\n      <ion-item>\n          <ion-label >Card number:</ion-label>\n          <ion-input floating type="text" placeholder="" #CNum ></ion-input>\n      </ion-item>\n\n      <ion-item >\n          <ion-label >Name on the card:</ion-label>\n          <ion-input floating type="text" placeholder="Ghada Bin Farhan" #CName></ion-input>\n      </ion-item > \n\n      <ion-item >\n          <ion-label >Date:</ion-label>\n          <ion-input floating type="text" placeholder="mm" #month></ion-input>\n          <ion-input floating type="text" placeholder="yyyy" #year></ion-input>\n      </ion-item > \n  </ion-list>\n\n<br />\n  <div>\n      <button ion-button full color="secondary" (click)="Save()">Save</button>\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\cards\cards.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+], CardsPage);
+
+//# sourceMappingURL=cards.js.map
+
+/***/ }),
+
 /***/ 208:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CategorizesPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__new_arrivals_new_arrivals__ = __webpack_require__(106);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var CategorizesPage = (function () {
+    function CategorizesPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    CategorizesPage.prototype.getProducts = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__new_arrivals_new_arrivals__["a" /* NewArrivalsPage */]);
+    };
+    CategorizesPage.prototype.show = function () {
+    };
+    return CategorizesPage;
+}());
+CategorizesPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-categorizes',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\categorizes\categorizes.html"*/'<ion-header>\n\n  <ion-navbar >\n\n    <ion-title class="toolbar">Catagorizes</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content  class="card-background-page" no-padding no-margin>\n\n  <ion-card (click)=getProducts()>\n\n    <img src="../assets/img/abaya4.jpg"/>\n\n    <div class="card-title">All Black Kesssa</div>\n\n  </ion-card>\n\n\n\n  <ion-card (click)=getProducts()>\n\n    <img src="../assets/img/abaya1.jpg"/>\n\n    <div class="card-title">Night Kesssa</div>\n\n  </ion-card>\n\n\n\n  <ion-card (click)=getProducts()>\n\n    <img src="../assets/img/abaya2.jpg"/>\n\n    <div class="card-title">Daily Kesssa</div>\n\n  </ion-card>\n\n\n\n  <ion-card (click)=getProducts()>\n\n    <img src="../assets/img/abaya3.jpg"/>\n\n    <div class="card-title">Scarfs</div>\n\n  </ion-card>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\categorizes\categorizes.html"*/
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object])
+], CategorizesPage);
+
+var _a;
+//# sourceMappingURL=categorizes.js.map
+
+/***/ }),
+
+/***/ 209:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BoutiqueInfoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__d_tabs_d_tabs__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__d_tabs_d_tabs__ = __webpack_require__(108);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -747,7 +794,7 @@ var BoutiqueInfoPage = (function () {
 }());
 BoutiqueInfoPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-boutique-info',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/boutique-info/boutique-info.html"*/'<ion-header>\n  <ion-navbar >\n    <ion-title >Boutique Info</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content >\n\n  <ion-list id="info">\n      <ion-item >\n          <ion-label id="item" >Boutique name:</ion-label>\n          <ion-label #name >AbayaBoutique</ion-label>\n      </ion-item>\n\n      <ion-item>\n          <ion-label >Instagram account:</ion-label>\n          <ion-input floating type="text" placeholder="@*****" #instagram ></ion-input>\n      </ion-item>\n  </ion-list>\n\n  <ion-list > \n      <ion-list-header >The boutiqe ships to:</ion-list-header>\n      <ion-item >\n          <ion-label>Saudi Arabia</ion-label>\n          <ion-checkbox color="secondary" checked="true"></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Bahrain</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Kuwait</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Oman</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Qatar</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>UAE</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n  </ion-list>\n\n  <ion-list >\n      <ion-list-header >online payment information</ion-list-header>\n      <ion-item>\n          <ion-label >Card number:</ion-label>\n          <ion-input floating type="text" placeholder="" #CNum ></ion-input>\n      </ion-item>\n\n      <ion-item >\n          <ion-label >Name on the card:</ion-label>\n          <ion-input floating type="text" placeholder="Ghada Bin Farhan" #CName></ion-input>\n      </ion-item > \n\n      <ion-item >\n          <ion-label >Bank</ion-label>\n          <ion-input floating type="text" placeholder="Bank Name" #CName></ion-input>\n      </ion-item >\n\n      <ion-item > \n        <ion-label >Country:</ion-label>\n        <ion-select [(ngModel)]="Country">\n          <ion-option value="SA">Saudi Arabia</ion-option>\n          <ion-option value="BH">Bahrain</ion-option>\n          <ion-option value="KW">Kuwait</ion-option>\n          <ion-option value="OM">Oman</ion-option>\n          <ion-option value="QA">Qatar</ion-option>\n          <ion-option value="AE">UAE</ion-option>\n        </ion-select>\n      </ion-item >\n\n  </ion-list>\n\n\n\n\n  <button ion-button full color="primery" (click)="RejesterBoutiqe()"> Rejester Boutiqe</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/boutique-info/boutique-info.html"*/,
+        selector: 'page-boutique-info',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\boutique-info\boutique-info.html"*/'<ion-header>\n  <ion-navbar >\n    <ion-title >Boutique Info</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content >\n\n  <ion-list id="info">\n      <ion-item >\n          <ion-label id="item" >Boutique name:</ion-label>\n          <ion-label #name >AbayaBoutique</ion-label>\n      </ion-item>\n\n      <ion-item>\n          <ion-label >Instagram account:</ion-label>\n          <ion-input floating type="text" placeholder="@*****" #instagram ></ion-input>\n      </ion-item>\n  </ion-list>\n\n  <ion-list > \n      <ion-list-header >The boutiqe ships to:</ion-list-header>\n      <ion-item >\n          <ion-label>Saudi Arabia</ion-label>\n          <ion-checkbox color="secondary" checked="true"></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Bahrain</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Kuwait</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Oman</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Qatar</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>UAE</ion-label>\n          <ion-checkbox color="secondary" checked="true" ></ion-checkbox>\n      </ion-item>\n  </ion-list>\n\n  <ion-list >\n      <ion-list-header >online payment information</ion-list-header>\n      <ion-item>\n          <ion-label >Card number:</ion-label>\n          <ion-input floating type="text" placeholder="" #CNum ></ion-input>\n      </ion-item>\n\n      <ion-item >\n          <ion-label >Name on the card:</ion-label>\n          <ion-input floating type="text" placeholder="Ghada Bin Farhan" #CName></ion-input>\n      </ion-item > \n\n      <ion-item >\n          <ion-label >Bank</ion-label>\n          <ion-input floating type="text" placeholder="Bank Name" #CName></ion-input>\n      </ion-item >\n\n      <ion-item > \n        <ion-label >Country:</ion-label>\n        <ion-select [(ngModel)]="Country">\n          <ion-option value="SA">Saudi Arabia</ion-option>\n          <ion-option value="BH">Bahrain</ion-option>\n          <ion-option value="KW">Kuwait</ion-option>\n          <ion-option value="OM">Oman</ion-option>\n          <ion-option value="QA">Qatar</ion-option>\n          <ion-option value="AE">UAE</ion-option>\n        </ion-select>\n      </ion-item >\n\n  </ion-list>\n\n\n\n\n  <button ion-button full color="primery" (click)="RejesterBoutiqe()"> Rejester Boutiqe</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\boutique-info\boutique-info.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
 ], BoutiqueInfoPage);
@@ -756,7 +803,7 @@ BoutiqueInfoPage = __decorate([
 
 /***/ }),
 
-/***/ 209:
+/***/ 210:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -786,7 +833,7 @@ var CollectionPage = (function () {
 }());
 CollectionPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-collection',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/collection/collection.html"*/'\n<ion-header>\n  <ion-navbar >\n    <ion-title >Collection</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding-vertical >\n   <div  class="prod">         \n         <div >\n            <div class="card-background-page grid" >\n               <ion-row class="row unlimited-items">\n                  <ion-col class="col" >\n                     <ion-card>\n                       <!--item img-->\n                        <ion-card-content style="padding: 0px;" class="stock">\n                           <a (click)="getProductDetails()">\n                              <img src="../assets/img/abaya2.jpg">\n                           </a>\n                        </ion-card-content>\n                        <!--item name-->\n                        <ion-label color="deep"><strong>Clasic Kessa</strong></ion-label>\n                     </ion-card>\n                  </ion-col>\n\n                  <!-- second item -->\n                <ion-col class="col" >\n                  <ion-card>\n                    <!--item img-->\n                    <ion-card-content style="padding: 0px;" class="stock">\n                      <a (click)="getProductDetails()">\n                        <img src="../assets/img/abaya3.jpg">\n                      </a>\n                    </ion-card-content>\n                    <!--item name-->\n                    <ion-label color="deep"><strong>Beige Kessa</strong></ion-label>\n                  </ion-card>\n                </ion-col>\n            \n               </ion-row>\n               <!--end of row-->\n            </div>\n         </div>\n         <!-- end of drid view -->   \n\n   </div>\n</ion-content>\n\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/collection/collection.html"*/,
+        selector: 'page-collection',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\collection\collection.html"*/'\n\n<ion-header>\n\n  <ion-navbar >\n\n    <ion-title >Collection</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding-vertical >\n\n   <div  class="prod">         \n\n         <div >\n\n            <div class="card-background-page grid" >\n\n               <ion-row class="row unlimited-items">\n\n                  <ion-col class="col" >\n\n                     <ion-card>\n\n                       <!--item img-->\n\n                        <ion-card-content style="padding: 0px;" class="stock">\n\n                           <a (click)="getProductDetails()">\n\n                              <img src="../assets/img/abaya2.jpg">\n\n                           </a>\n\n                        </ion-card-content>\n\n                        <!--item name-->\n\n                        <ion-label color="deep"><strong>Clasic Kessa</strong></ion-label>\n\n                     </ion-card>\n\n                  </ion-col>\n\n\n\n                  <!-- second item -->\n\n                <ion-col class="col" >\n\n                  <ion-card>\n\n                    <!--item img-->\n\n                    <ion-card-content style="padding: 0px;" class="stock">\n\n                      <a (click)="getProductDetails()">\n\n                        <img src="../assets/img/abaya3.jpg">\n\n                      </a>\n\n                    </ion-card-content>\n\n                    <!--item name-->\n\n                    <ion-label color="deep"><strong>Beige Kessa</strong></ion-label>\n\n                  </ion-card>\n\n                </ion-col>\n\n            \n\n               </ion-row>\n\n               <!--end of row-->\n\n            </div>\n\n         </div>\n\n         <!-- end of drid view -->   \n\n\n\n   </div>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\collection\collection.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
 ], CollectionPage);
@@ -795,7 +842,7 @@ CollectionPage = __decorate([
 
 /***/ }),
 
-/***/ 210:
+/***/ 211:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -825,7 +872,7 @@ var DOrdersPage = (function () {
 }());
 DOrdersPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-d-orders',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/d-orders/d-orders.html"*/'\n<ion-header>\n  <ion-navbar >\n    <ion-title >Orders</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n\n   <div style="margin: 10px 0 0 0;">\n\n\n      <ion-list >\n         <!--list of orders-->\n         <ion-item no-lines class="items"  >\n           <ion-list-header>List of orders</ion-list-header>\n          <h4>Order #</h4>\n         <h4 style="margin-top:0px;"> Client Name: {{name}} </h4>\n         <h4 style="margin-top:0px;"> Client Phone: {{Phone}} </h4>\n         <h4 style="margin-top:0px;"> Client Size: {{Size}} </h4>\n         <!--list of items-->\n            <ion-list >\n              <ion-item>\n                <ion-list-header>List of Items</ion-list-header>\n                <h4 style="margin-top:0px;"> Item Name: {{Pname}} </h4>\n                <h4 style="margin-top:0px;"> Item color: {{Pname}} </h4>\n              </ion-item>\n            </ion-list>\n         </ion-item>\n         <h4 style="margin-top:10px;margin-bottom:0px; font-size:15px; padding-left:16px">Total </h4>\n\n         <hr >\n      </ion-list>\n   </div>\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/d-orders/d-orders.html"*/,
+        selector: 'page-d-orders',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\d-orders\d-orders.html"*/'\n<ion-header>\n  <ion-navbar >\n    <ion-title >Orders</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n\n   <div style="margin: 10px 0 0 0;">\n\n\n      <ion-list >\n         <!--list of orders-->\n         <ion-item no-lines class="items"  >\n           <ion-list-header>List of orders</ion-list-header>\n          <h4>Order #</h4>\n         <h4 style="margin-top:0px;"> Client Name: {{name}} </h4>\n         <h4 style="margin-top:0px;"> Client Phone: {{Phone}} </h4>\n         <h4 style="margin-top:0px;"> Client Size: {{Size}} </h4>\n         <!--list of items-->\n            <ion-list >\n              <ion-item>\n                <ion-list-header>List of Items</ion-list-header>\n                <h4 style="margin-top:0px;"> Item Name: {{Pname}} </h4>\n                <h4 style="margin-top:0px;"> Item color: {{Pname}} </h4>\n              </ion-item>\n            </ion-list>\n         </ion-item>\n         <h4 style="margin-top:10px;margin-bottom:0px; font-size:15px; padding-left:16px">Total </h4>\n\n         <hr >\n      </ion-list>\n   </div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\d-orders\d-orders.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
 ], DOrdersPage);
@@ -834,7 +881,7 @@ DOrdersPage = __decorate([
 
 /***/ }),
 
-/***/ 211:
+/***/ 212:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -872,7 +919,7 @@ var NewItemPage = (function () {
 }());
 NewItemPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-new-item',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/new-item/new-item.html"*/'\n<ion-header >\n  <ion-navbar >\n    <ion-title >New Kessa</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding-vertical >\n  <div padding>\n    <form >\n        <ion-list>\n          <ion-item>\n              <ion-label>Name:</ion-label>\n              <ion-input floating type="text" placeholder="Product Name" #name > </ion-input>\n          </ion-item>\n\n          <ion-item >\n              <ion-label>category</ion-label>\n              <ion-select >\n              <ion-option color="secondary" >All black Kessa</ion-option>\n              <ion-option color="secondary" >Daily Kessa</ion-option>\n              <ion-option color="secondary" >Night Kessa</ion-option>\n              <ion-option color="secondary" >Scarfs</ion-option>\n              </ion-select>\n          </ion-item>\n\n          <ion-item>\n              <ion-label >Price</ion-label>\n              <ion-input floating type="number" placeholder="150"></ion-input>\n          </ion-item>\n\n          <ion-item class="option">\n              <ion-label>InStock</ion-label>\n              <ion-toggle checked="true" ></ion-toggle>\n          </ion-item>\n\n\n          <ion-item>\n              <ion-label >Description</ion-label>\n              <ion-textarea rows="4" floating type="text" placeholder="text text"></ion-textarea>\n          </ion-item>\n\n          <ion-item>\n              <ion-thumbnail>\n                <img >\n              </ion-thumbnail>\n              <input type="file" name="Choose File" (click)="uplodFile()">\n          </ion-item>\n        </ion-list>\n    </form>\n  </div>\n\n  <div>\n    <button ion-button full color="primery" (click)="login()">save</button>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/new-item/new-item.html"*/,
+        selector: 'page-new-item',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\new-item\new-item.html"*/'\n\n<ion-header >\n\n  <ion-navbar >\n\n    <ion-title >New Kessa</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding-vertical >\n\n  <div padding>\n\n    <form >\n\n        <ion-list>\n\n          <ion-item>\n\n              <ion-label>Name:</ion-label>\n\n              <ion-input floating type="text" placeholder="Product Name" #name > </ion-input>\n\n          </ion-item>\n\n\n\n          <ion-item >\n\n              <ion-label>category</ion-label>\n\n              <ion-select >\n\n              <ion-option color="secondary" >All black Kessa</ion-option>\n\n              <ion-option color="secondary" >Daily Kessa</ion-option>\n\n              <ion-option color="secondary" >Night Kessa</ion-option>\n\n              <ion-option color="secondary" >Scarfs</ion-option>\n\n              </ion-select>\n\n          </ion-item>\n\n\n\n          <ion-item>\n\n              <ion-label >Price</ion-label>\n\n              <ion-input floating type="number" placeholder="150"></ion-input>\n\n          </ion-item>\n\n\n\n          <ion-item class="option">\n\n              <ion-label>InStock</ion-label>\n\n              <ion-toggle checked="true" ></ion-toggle>\n\n          </ion-item>\n\n\n\n\n\n          <ion-item>\n\n              <ion-label >Description</ion-label>\n\n              <ion-textarea rows="4" floating type="text" placeholder="text text"></ion-textarea>\n\n          </ion-item>\n\n\n\n          <ion-item>\n\n              <ion-thumbnail>\n\n                <img >\n\n              </ion-thumbnail>\n\n              <input type="file" name="Choose File" (click)="uplodFile()">\n\n          </ion-item>\n\n        </ion-list>\n\n    </form>\n\n  </div>\n\n\n\n  <div>\n\n    <button ion-button full color="primery" (click)="login()">save</button>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\new-item\new-item.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
 ], NewItemPage);
@@ -881,7 +928,7 @@ NewItemPage = __decorate([
 
 /***/ }),
 
-/***/ 212:
+/***/ 213:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -917,7 +964,7 @@ var DProfilePage = (function () {
 }());
 DProfilePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-d-profile',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/d-profile/d-profile.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="toolbar">\n      Profile\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list >\n      <ion-item >\n          <ion-label id="item">Name:</ion-label>\n          <ion-label #name >Ghada Abdulaziz</ion-label>\n      </ion-item>\n      <ion-item >\n          <ion-label id="item">Boutique Name:</ion-label>\n          <ion-label #name >Boutique Ghada</ion-label>\n      </ion-item>\n\n      <ion-item>\n          <ion-label id="item">Email:</ion-label>\n          <ion-label #email >Ghada@gmailcom</ion-label>\n      </ion-item>\n\n      <ion-item>\n          <ion-label id="item">Phone:</ion-label>\n          <ion-label #phone >+96655*******</ion-label>\n      </ion-item>\n\n      <ion-item >\n          <ion-label id="item">Password:</ion-label>\n          <ion-label #password>*******</ion-label>\n      </ion-item >\n\n  </ion-list>\n\n\n  <br />\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/d-profile/d-profile.html"*/,
+        selector: 'page-d-profile',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\d-profile\d-profile.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title class="toolbar">\n\n      Profile\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list >\n\n      <ion-item >\n\n          <ion-label id="item">Name:</ion-label>\n\n          <ion-label #name >Ghada Abdulaziz</ion-label>\n\n      </ion-item>\n\n      <ion-item >\n\n          <ion-label id="item">Boutique Name:</ion-label>\n\n          <ion-label #name >Boutique Ghada</ion-label>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n          <ion-label id="item">Email:</ion-label>\n\n          <ion-label #email >Ghada@gmailcom</ion-label>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n          <ion-label id="item">Phone:</ion-label>\n\n          <ion-label #phone >+96655*******</ion-label>\n\n      </ion-item>\n\n\n\n      <ion-item >\n\n          <ion-label id="item">Password:</ion-label>\n\n          <ion-label #password>*******</ion-label>\n\n      </ion-item >\n\n\n\n  </ion-list>\n\n\n\n\n\n  <br />\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\d-profile\d-profile.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
 ], DProfilePage);
@@ -926,7 +973,7 @@ DProfilePage = __decorate([
 
 /***/ }),
 
-/***/ 213:
+/***/ 214:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -982,13 +1029,13 @@ CartProvider = __decorate([
 
 /***/ }),
 
-/***/ 214:
+/***/ 215:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(234);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -996,7 +1043,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 233:
+/***/ 234:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1004,32 +1051,32 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(274);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_new_arrivals_new_arrivals__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_profile_profile__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_categorizes_categorizes__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_cart_cart__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_profile_profile__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_categorizes_categorizes__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_cart_cart__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_home_home__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_login_login__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_login_login__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_sign_up_sign_up__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_c_orders_c_orders__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_cards_cards__ = __webpack_require__(285);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_payment_payment__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_c_orders_c_orders__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_cards_cards__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_payment_payment__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_kessa_details_kessa_details__ = __webpack_require__(286);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_d_tabs_d_tabs__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_boutique_info_boutique_info__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_collection_collection__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_d_orders_d_orders__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_new_item_new_item__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_d_profile_d_profile__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_d_tabs_d_tabs__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_boutique_info_boutique_info__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_collection_collection__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_d_orders_d_orders__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_new_item_new_item__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_d_profile_d_profile__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_storage__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_status_bar__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_splash_screen__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_cart_cart__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_status_bar__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_splash_screen__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_cart_cart__ = __webpack_require__(214);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__providers_auth_auth__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_products_products__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_products_products__ = __webpack_require__(203);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1138,15 +1185,15 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 273:
+/***/ 274:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(101);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1175,57 +1222,12 @@ var MyApp = (function () {
     return MyApp;
 }());
 MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/app/app.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\app\app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
 
 //# sourceMappingURL=app.component.js.map
-
-/***/ }),
-
-/***/ 285:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CardsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the CardsPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
-var CardsPage = (function () {
-    function CardsPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    CardsPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CardsPage');
-    };
-    return CardsPage;
-}());
-CardsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-cards',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/cards/cards.html"*/'<!--\n  Generated template for the CardsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-title class="toolbar">Cards</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content >\n <ion-list >\n      <ion-item>\n          <ion-label >Card number:</ion-label>\n          <ion-input floating type="text" placeholder="" #CNum ></ion-input>\n      </ion-item>\n\n      <ion-item >\n          <ion-label >Name on the card:</ion-label>\n          <ion-input floating type="text" placeholder="Ghada Bin Farhan" #CName></ion-input>\n      </ion-item > \n\n      <ion-item >\n          <ion-label >Date:</ion-label>\n          <ion-input floating type="text" placeholder="mm" #month></ion-input>\n          <ion-input floating type="text" placeholder="yyyy" #year></ion-input>\n      </ion-item > \n  </ion-list>\n\n<br />\n  <div>\n      <button ion-button full color="secondary" (click)="Save()">Save</button>\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/cards/cards.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-], CardsPage);
-
-//# sourceMappingURL=cards.js.map
 
 /***/ }),
 
@@ -1236,7 +1238,7 @@ CardsPage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return KessaDetailsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_cart_cart__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_cart_cart__ = __webpack_require__(214);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1284,7 +1286,7 @@ var KessaDetailsPage = (function () {
 }());
 KessaDetailsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-kessa-details',template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/kessa-details/kessa-details.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>KessaDetails</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="product" >\n   <div padding style="margin-bottom:40px">\n      <img src="../assets/img/logo.png">\n      <!--name-->\n      <ion-label color="deep" text-center><strong>Product Name</strong></ion-label>\n      <!--price-->\n        <ion-list>\n          <ion-item>\n            <ion-label id="item">Price: </ion-label>\n            <ion-label>88</ion-label>\n          </ion-item >\n        </ion-list>\n\n        <!--info-->\n        <ion-list class="info">\n          <ion-item>\n            <ion-label id="item">Designer:</ion-label>\n            <ion-label>kesaa boutique</ion-label>\n          </ion-item >\n\n          <!--description-->\n          <ion-item>\n            <ion-label id="item">Description:</ion-label>\n            <ion-label text-wrap> Lorem ipsum dolor sit amet, consectetur adipiscing elit, \n                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</ion-label>\n          </ion-item>\n          <!--Category-->\n          <ion-item>\n            <ion-label id="item">Category:</ion-label>\n            <ion-label >Night Kessa</ion-label>\n          </ion-item>\n           <!--Size-->   \n           <ion-item>\n              <ion-label>Size</ion-label>\n                <ion-select [(ngModel)]="size">\n                  <ion-option value="Small">S</ion-option>\n                  <ion-option value="Medium">M</ion-option>\n                  <ion-option value="Large">L</ion-option>\n               </ion-select>\n            </ion-item>\n\n\n       </ion-list>\n   </div>\n      <button ion-button full color="secondary" (click)="addToCart()">Add To Cart</button>\n</ion-content>\n\n\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/kessa-details/kessa-details.html"*/,
+        selector: 'page-kessa-details',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\kessa-details\kessa-details.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>KessaDetails</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="product" >\n   <div padding style="margin-bottom:40px">\n      <img src="../assets/img/logo.png">\n      <!--name-->\n      <ion-label color="deep" text-center><strong>Product Name</strong></ion-label>\n      <!--price-->\n        <ion-list>\n          <ion-item>\n            <ion-label id="item">Price: </ion-label>\n            <ion-label>88</ion-label>\n          </ion-item >\n        </ion-list>\n\n        <!--info-->\n        <ion-list class="info">\n          <ion-item>\n            <ion-label id="item">Designer:</ion-label>\n            <ion-label>kesaa boutique</ion-label>\n          </ion-item >\n\n          <!--description-->\n          <ion-item>\n            <ion-label id="item">Description:</ion-label>\n            <ion-label text-wrap> Lorem ipsum dolor sit amet, consectetur adipiscing elit, \n                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</ion-label>\n          </ion-item>\n          <!--Category-->\n          <ion-item>\n            <ion-label id="item">Category:</ion-label>\n            <ion-label >Night Kessa</ion-label>\n          </ion-item>\n           <!--Size-->   \n           <ion-item>\n              <ion-label>Size</ion-label>\n                <ion-select [(ngModel)]="size">\n                  <ion-option value="Small">S</ion-option>\n                  <ion-option value="Medium">M</ion-option>\n                  <ion-option value="Large">L</ion-option>\n               </ion-select>\n            </ion-item>\n\n\n       </ion-list>\n   </div>\n      <button ion-button full color="secondary" (click)="addToCart()">Add To Cart</button>\n</ion-content>\n\n\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\kessa-details\kessa-details.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */],
@@ -1302,9 +1304,9 @@ KessaDetailsPage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__new_arrivals_new_arrivals__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__profile_profile__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__categorizes_categorizes__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__cart_cart__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__profile_profile__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__categorizes_categorizes__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__cart_cart__ = __webpack_require__(107);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1329,7 +1331,7 @@ var TabsPage = (function () {
     return TabsPage;
 }());
 TabsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Categories" tabIcon="ios-apps-outline"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="New Arrivals" tabIcon="ios-star-outline"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Cart" tabIcon="cart"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="Profile" tabIcon="ios-contact-outline"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/Ghada/kessa/Senior/GPApp/client/src/pages/tabs/tabs.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\tabs\tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Categories" tabIcon="ios-apps-outline"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="New Arrivals" tabIcon="ios-star-outline"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Cart" tabIcon="cart"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="Profile" tabIcon="ios-contact-outline"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\tabs\tabs.html"*/
     }),
     __metadata("design:paramtypes", [])
 ], TabsPage);
@@ -1338,5 +1340,5 @@ TabsPage = __decorate([
 
 /***/ })
 
-},[214]);
+},[215]);
 //# sourceMappingURL=main.js.map
