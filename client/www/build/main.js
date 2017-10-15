@@ -145,8 +145,8 @@ AuthProvider = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__new_arrivals_new_arrivals__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__d_tabs_d_tabs__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__d_tabs_d_tabs__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tabs_tabs__ = __webpack_require__(205);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -167,7 +167,7 @@ var SignUpPage = (function () {
         this.authService = authService;
         this.loadingCtrl = loadingCtrl;
     }
-    SignUpPage.prototype.register = function () {
+    SignUpPage.prototype.registerDesigner = function () {
         var _this = this;
         this.showLoader();
         var details = {
@@ -179,11 +179,25 @@ var SignUpPage = (function () {
         };
         this.authService.createAccount(details).then(function (result) {
             _this.loading.dismiss();
-            if (_this.role === 1)
-                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__new_arrivals_new_arrivals__["a" /* NewArrivalsPage */]);
-            else {
-                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__d_tabs_d_tabs__["a" /* DTabsPage */]);
-            }
+            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__d_tabs_d_tabs__["a" /* DTabsPage */]);
+            console.log(result);
+        }, function (err) {
+            _this.loading.dismiss();
+        });
+    };
+    SignUpPage.prototype.registerCustomer = function () {
+        var _this = this;
+        this.showLoader();
+        var details = {
+            name: this.name,
+            email: this.email,
+            phone: this.phone,
+            password: this.password,
+            role: this.role
+        };
+        this.authService.createAccount(details).then(function (result) {
+            _this.loading.dismiss();
+            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__tabs_tabs__["a" /* TabsPage */]);
             console.log(result);
         }, function (err) {
             _this.loading.dismiss();
@@ -199,13 +213,12 @@ var SignUpPage = (function () {
 }());
 SignUpPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-sign-up',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\sign-up\sign-up.html"*/'<!--\n\n  Generated template for the SignUpPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title class="toolbar">Sign Up</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content  padding-vertical>\n\n  \n\n  <ion-list >\n\n      <ion-item >\n\n          <ion-label>Name:</ion-label>\n\n          <ion-input [(ngModel)]="name"floating type="text" placeholder="Ghada Abdulaziz" ngDefaultControl > </ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n          <ion-label>Email:</ion-label>\n\n          <ion-input [(ngModel)]="email" floating type="email" placeholder="******@*****.com" ngDefaultControl ></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n          <ion-label>Phone:</ion-label>\n\n          <ion-input [(ngModel)]="phone" floating type="phone" placeholder="+96655*******" ngDefaultControl>Phone:</ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item >\n\n          <ion-label>Password:</ion-label>\n\n          <ion-input [(ngModel)]="password" floating type="password" placeholder="Password" ngDefaultControl></ion-input>\n\n      </ion-item >\n\n  </ion-list>\n\n  \n\n  <br />\n\n \n\n <div>\n\n     <button ion-button [(ngModel)]="role" value="2" full color="secondary" (click)="register()" ngDefaultControl> Designer</button> \n\n     <p>or</p>\n\n     <button ion-button [(ngModel)]="role" value="1" full color="secondary" (click)="register()" ngDefaultControl > Customer</button>\n\n  </div>\n\n\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\sign-up\sign-up.html"*/,
+        selector: 'page-sign-up',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\sign-up\sign-up.html"*/'<!--\n\n  Generated template for the SignUpPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title class="toolbar">Sign Up</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content  padding-vertical>\n\n  \n\n  <ion-list >\n\n      <ion-item >\n\n          <ion-label>Name:</ion-label>\n\n          <ion-input [(ngModel)]="name"floating type="text" placeholder="Ghada Abdulaziz" ngDefaultControl > </ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n          <ion-label>Email:</ion-label>\n\n          <ion-input [(ngModel)]="email" floating type="email" placeholder="******@*****.com" ngDefaultControl ></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n          <ion-label>Phone:</ion-label>\n\n          <ion-input [(ngModel)]="phone" floating type="phone" placeholder="+96655*******" ngDefaultControl>Phone:</ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item >\n\n          <ion-label>Password:</ion-label>\n\n          <ion-input [(ngModel)]="password" floating type="password" placeholder="Password" ngDefaultControl></ion-input>\n\n      </ion-item >\n\n  </ion-list>\n\n  \n\n  <br />\n\n \n\n <div>\n\n     <button ion-button [(ngModel)]="role" value="2" full color="secondary" (click)="registerDesigner()" ngDefaultControl> Designer</button> \n\n     <p>or</p>\n\n     <button ion-button [(ngModel)]="role" value="1" full color="secondary" (click)="registerCustomer()" ngDefaultControl > Customer</button>\n\n  </div>\n\n\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\sign-up\sign-up.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
-        __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__["a" /* AuthProvider */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__["a" /* AuthProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__["a" /* AuthProvider */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */]) === "function" && _c || Object])
 ], SignUpPage);
 
+var _a, _b, _c;
 //# sourceMappingURL=sign-up.js.map
 
 /***/ }),
@@ -290,7 +303,8 @@ webpackEmptyAsyncContext.id = 156;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sign_up_sign_up__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__new_arrivals_new_arrivals__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__d_tabs_d_tabs__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tabs_tabs__ = __webpack_require__(205);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -300,6 +314,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -318,9 +333,13 @@ var LoginPage = (function () {
         this.showLoader();
         // Check if already authenticated
         this.authService.checkAuthentication().then(function (res) {
+            if (_this.role === 1)
+                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_6__tabs_tabs__["a" /* TabsPage */]);
+            else {
+                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__d_tabs_d_tabs__["a" /* DTabsPage */]);
+            }
             console.log("Already authorized");
             _this.loading.dismiss();
-            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__new_arrivals_new_arrivals__["a" /* NewArrivalsPage */]);
         }, function (err) {
             console.log("Not already authorized");
             _this.loading.dismiss();
@@ -358,12 +377,10 @@ LoginPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-login',template:/*ion-inline-start:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\login\login.html"*/'\n<ion-header>\n\n  <ion-navbar >\n    <ion-title class="toolbar">login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding-vertical >\n\n  <ion-list >\n      <ion-item >\n          <ion-label>Name:</ion-label>\n          <ion-input floating type="text" placeholder="Ghada Abdulaziz" #name > </ion-input>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Email:</ion-label>\n          <ion-input floating type="email" placeholder="******@*****.com" #email ></ion-input>\n      </ion-item>\n\n      <ion-item>\n          <ion-label>Phone:</ion-label>\n          <ion-input floating type="phone" placeholder="+96655*******" #phone >Phone:</ion-input>\n      </ion-item>\n\n      <ion-item >\n          <ion-label>Password:</ion-label>\n          <ion-input floating type="password" placeholder="Password" #password></ion-input>\n      </ion-item >\n  </ion-list>\n  \n  <br />\n  <div>\n      <button ion-button full color="secondary" (click)="login()"> Login</button>\n  </div>\n\n</ion-content>'/*ion-inline-end:"C:\Users\asus2\Documents\Spring16-17\GP I\GPApp-master\client\src\pages\login\login.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */],
-        __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */]) === "function" && _d || Object])
 ], LoginPage);
 
+var _a, _b, _c, _d;
 //# sourceMappingURL=login.js.map
 
 /***/ }),

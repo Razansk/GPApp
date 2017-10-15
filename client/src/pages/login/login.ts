@@ -4,8 +4,8 @@ import { HomePage } from '../home/home';
 import { AuthProvider } from '../../providers/auth/auth';
 import { SignUpPage } from '../sign-up/sign-up';
 import { BoutiqueInfoPage } from '../boutique-info/boutique-info'; //Designer app
-import {NewArrivalsPage} from '../new-arrivals/new-arrivals';
-
+import { DTabsPage } from '../d-tabs/d-tabs';
+import { TabsPage } from '../tabs/tabs';
 
 
 @Component({
@@ -16,6 +16,7 @@ export class LoginPage {
     email: string;
     password: string;
     loading: any;
+    role: any;
 
   
   constructor(public navCtrl: NavController,
@@ -31,9 +32,13 @@ export class LoginPage {
  
         // Check if already authenticated
         this.authService.checkAuthentication().then((res) => {
+            if(this.role === 1)
+            this.navCtrl.setRoot(TabsPage);
+      else{
+            this.navCtrl.setRoot(DTabsPage);
+              }
             console.log("Already authorized");
             this.loading.dismiss();
-            this.navCtrl.setRoot(NewArrivalsPage);
 
         }, (err) => {
             console.log("Not already authorized");
