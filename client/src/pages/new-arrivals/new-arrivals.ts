@@ -14,7 +14,7 @@ export class NewArrivalsPage {
   }
 
  ionViewDidLoad(){
-    this.navCtrl.setRoot(NewArrivalsPage);
+  
 
     };
  
@@ -25,6 +25,11 @@ export class NewArrivalsPage {
     this.navCtrl.setRoot(CartPage);
 
   }
+
+  getProductDetails(){
+    this.navCtrl.setRoot(KessaDetailsPage);
+  }
+  
 
 }
 
