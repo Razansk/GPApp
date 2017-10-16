@@ -737,8 +737,6 @@ var CategorizesPage = (function () {
     CategorizesPage.prototype.getProducts = function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__new_arrivals_new_arrivals__["a" /* NewArrivalsPage */]);
     };
-    CategorizesPage.prototype.show = function () {
-    };
     return CategorizesPage;
 }());
 CategorizesPage = __decorate([
